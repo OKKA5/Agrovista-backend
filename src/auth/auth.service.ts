@@ -12,7 +12,10 @@ import { Model } from "mongoose";
 import * as bcrypt from "bcrypt";
 import { User, UserDocument, UserStatus } from "../schemas/user.schema";
 import { Admin, AdminDocument } from "../schemas/admin.schema";
-import { RefreshToken, RefreshTokenDocument } from "../schemas/refresh-token.schema";
+import {
+  RefreshToken,
+  RefreshTokenDocument,
+} from "../schemas/refresh-token.schema";
 import { RegisterDto } from "./dto/register.dto";
 import { LoginDto } from "./dto/login.dto";
 import { ChangePasswordDto } from "./dto/change-password.dto";
@@ -30,7 +33,8 @@ export class AuthService {
   constructor(
     @InjectModel(User.name) private userModel: Model<UserDocument>,
     @InjectModel(Admin.name) private adminModel: Model<AdminDocument>,
-    @InjectModel(RefreshToken.name) private refreshTokenModel: Model<RefreshTokenDocument>,
+    @InjectModel(RefreshToken.name)
+    private refreshTokenModel: Model<RefreshTokenDocument>,
     private MailService: MailService,
     private tokensService: TokensService,
     private readonly locationsService: LocationsService,
@@ -81,6 +85,12 @@ export class AuthService {
     const hashedCode = await bcrypt.hash(rawCode, 10);
     const codeExpire = Date.now() + 1000 * 60 * 10;
 
+    await this.MailService.sendVerificationCode(
+      registerDto.email,
+      rawCode,
+      "Email verification code",
+    );
+    
     const user = new this.userModel({
       ...registerDto,
       passwordHash,
@@ -91,18 +101,15 @@ export class AuthService {
 
     await user.save();
 
-    await this.MailService.sendVerificationCode(
-      registerDto.email,
-      rawCode,
-      "Email verification code",
-    );
-
     return {
       message: "Registration successful. Please verify your email.",
     };
   }
 
-  private async findUserById(userId: string, role: string): Promise<any | null> {
+  private async findUserById(
+    userId: string,
+    role: string,
+  ): Promise<any | null> {
     if (role === "ADMIN" || role === "SUPER_ADMIN") {
       return this.adminModel.findById(userId);
     }
@@ -138,7 +145,7 @@ export class AuthService {
     platform: Platform,
   ): Promise<AuthResponseDto> {
     const admin = await this.adminModel.findOne({
-      email: loginDto.email
+      email: loginDto.email,
     });
     if (!admin) {
       throw new UnauthorizedException("Invalid credentials");
@@ -155,10 +162,13 @@ export class AuthService {
 
     const mustChangePassword = admin.tempPassword === true;
 
-    return this.tokensService.generateTokens(admin, platform, undefined, mustChangePassword);
+    return this.tokensService.generateTokens(
+      admin,
+      platform,
+      undefined,
+      mustChangePassword,
+    );
   }
-
-
 
   async refreshToken(
     refreshToken: string,
@@ -324,7 +334,10 @@ export class AuthService {
       throw new BadRequestException("Current password is incorrect");
     }
 
-    const isSamePassword = await bcrypt.compare(dto.newPassword, user.passwordHash);
+    const isSamePassword = await bcrypt.compare(
+      dto.newPassword,
+      user.passwordHash,
+    );
 
     if (isSamePassword) {
       throw new BadRequestException(
@@ -343,8 +356,16 @@ export class AuthService {
     return { message: "Password changed successfully. Please log in again." };
   }
 
-  async saveFcmToken(userId: string, role: string, deviceId: string, token: string) {
-    const model: any = role === "ADMIN" || role === "SUPER_ADMIN" ? this.adminModel : this.userModel;
+  async saveFcmToken(
+    userId: string,
+    role: string,
+    deviceId: string,
+    token: string,
+  ) {
+    const model: any =
+      role === "ADMIN" || role === "SUPER_ADMIN"
+        ? this.adminModel
+        : this.userModel;
 
     const user = await model.findOne({
       _id: userId,
@@ -398,6 +419,8 @@ export class AuthService {
       this.refreshTokenModel.deleteMany({ userId: { $in: userIds } }),
     ]);
 
-    this.logger.log(`Deleted ${expiredUsers.length} expired unverified user(s)`);
+    this.logger.log(
+      `Deleted ${expiredUsers.length} expired unverified user(s)`,
+    );
   }
 }

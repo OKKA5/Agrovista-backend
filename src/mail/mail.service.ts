@@ -1,27 +1,17 @@
 import { Injectable } from "@nestjs/common";
-import * as nodemailer from "nodemailer";
+import sgMail from "@sendgrid/mail";
+
 @Injectable()
 export class MailService {
-  private transporter;
-
   constructor() {
-    this.transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
-      family: 4,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS?.replace(/\s/g, ""),
-      },
-    } as any);
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
   }
 
   async sendVerificationCode(email: string, code: string, message: string) {
     try {
-      await this.transporter.sendMail({
-        from: process.env.EMAIL_USER,
+      await sgMail.send({
         to: email,
+        from: process.env.EMAIL_USER!,
         subject: `Verification Code ${message}`,
         text: `Your verification code is: ${code}`,
       });
