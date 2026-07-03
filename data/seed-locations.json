@@ -1,0 +1,8999 @@
+[
+  {
+    "_id": "EG",
+    "parentId": null,
+    "level": 0,
+    "nameEn": "Egypt",
+    "nameAr": "مصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.41025287841098,
+        29.453523147917817
+      ]
+    },
+    "adjacencyIds": [],
+    "region": null
+  },
+  {
+    "_id": "EG13",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Sharkia",
+    "nameAr": "الشرقية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.653780939545456,
+        30.60589586136364
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG01",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Cairo",
+    "nameAr": "القاهرة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.33867973904762,
+        30.04381692380953
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG21",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Giza",
+    "nameAr": "الجيزة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.97163463636364,
+        29.82981343409091
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG32",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "New Valley",
+    "nameAr": "الوادى الجديد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        28.8485906975,
+        24.9271514525
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG02",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Alexandria",
+    "nameAr": "الاسكندرية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.841697397368414,
+        31.10445829157895
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG25",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Assiut",
+    "nameAr": "أسيوط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.221636274,
+        27.18648998466666
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG14",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Kalyoubia",
+    "nameAr": "القليوبية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.277413902666662,
+        30.274480962
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG23",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Fayoum",
+    "nameAr": "الفيوم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.762349451111113,
+        29.33489347222222
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG18",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Behera",
+    "nameAr": "البحيرة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.396093768947367,
+        30.900577563684212
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG35",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "South Sinai",
+    "nameAr": "جنوب سيناء",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.0657200175,
+        28.9122273375
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG28",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Aswan",
+    "nameAr": "أسوان",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.707330406,
+        23.941579937
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG27",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Qena",
+    "nameAr": "قنا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.57177156357143,
+        25.97756325785714
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG12",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Dakahlia",
+    "nameAr": "الدقهلية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.55869983952382,
+        31.080914370476187
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG22",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Beni Suef",
+    "nameAr": "بنى سويف",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.049185209,
+        29.020336374000003
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG26",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Suhag",
+    "nameAr": "سوهاج",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.728211583999997,
+        26.549413693499996
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG03",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Port Said",
+    "nameAr": "بورسعيد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.294296988333336,
+        31.199970303333334
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG04",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Suez",
+    "nameAr": "السويس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.455812515,
+        29.923722635
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG17",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Menoufia",
+    "nameAr": "المنوفية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.960276357500003,
+        30.502944594166667
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG33",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Matrouh",
+    "nameAr": "مطروح",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        27.42610794875,
+        30.11715797625
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG34",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "North Sinai",
+    "nameAr": "شمال سيناء",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.71027061181819,
+        30.760772731818182
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG15",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Kafr El-Shikh",
+    "nameAr": "كفر الشيخ",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.869354975833332,
+        31.26444989166666
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG16",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Gharbia",
+    "nameAr": "الغربية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.048557891666672,
+        30.878319051666665
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG11",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Damietta",
+    "nameAr": "دمياط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.75180486,
+        31.396068996666664
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG19",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Ismailia",
+    "nameAr": "الإسماعيلية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.25810988125,
+        30.548479315
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG31",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Red Sea",
+    "nameAr": "البحر الأحمر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.87143788625,
+        25.77999483375
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG24",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Menia",
+    "nameAr": "المنيا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.81538197461538,
+        28.16417420846154
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG29",
+    "parentId": "EG",
+    "level": 1,
+    "nameEn": "Luxor",
+    "nameAr": "مدينة الأقصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.669382060000004,
+        25.690953370000003
+      ]
+    },
+    "adjacencyIds": [],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1309",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "10 Ramadan 1",
+    "nameAr": "قسم اول مدينة العاشر من رمضان",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.73215378,
+        30.22236909
+      ]
+    },
+    "adjacencyIds": [
+      "EG1321",
+      "EG1608",
+      "EG1300"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1321",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "10 Ramadan 2",
+    "nameAr": "قسم ثان مدينه العاشر من رمضان",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.70035281,
+        30.23834882
+      ]
+    },
+    "adjacencyIds": [
+      "EG1309",
+      "EG1608",
+      "EG1300"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0103",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "15 Mayu",
+    "nameAr": "قسم 15 مايو",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.38734968,
+        29.85339077
+      ]
+    },
+    "adjacencyIds": [
+      "EG0101",
+      "EG1608",
+      "EG0102",
+      "EG0105",
+      "EG0100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2107",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "6 October-1",
+    "nameAr": "قسم أول 6 أكتوبر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.96284219,
+        29.98537796
+      ]
+    },
+    "adjacencyIds": [
+      "EG2121",
+      "EG1608",
+      "EG2119",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2121",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "6 October-2",
+    "nameAr": "قسم ثان 6 أكتوبر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.90785168,
+        29.94085955
+      ]
+    },
+    "adjacencyIds": [
+      "EG2107",
+      "EG1608",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG3202",
+    "parentId": "EG32",
+    "level": 2,
+    "nameEn": "A-Dakhla Oasis",
+    "nameAr": "مركز الوحات الداخلة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        27.20862683,
+        24.8028831
+      ]
+    },
+    "adjacencyIds": [
+      "EG3201",
+      "EG3203",
+      "EG1608",
+      "EG3204",
+      "EG2400",
+      "EG2500"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG0209",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "A L Labban",
+    "nameAr": "قسم اللبان",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.89239598,
+        31.19072847
+      ]
+    },
+    "adjacencyIds": [
+      "EG0206",
+      "EG0210",
+      "EG0207",
+      "EG1608",
+      "EG0208",
+      "EG0211",
+      "EG0215"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0109",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Abdin",
+    "nameAr": "قسم عابدين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24521898,
+        30.04602082
+      ]
+    },
+    "adjacencyIds": [
+      "EG0113",
+      "EG0114",
+      "EG1608",
+      "EG0110",
+      "EG0111",
+      "EG0107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2504",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Abnub",
+    "nameAr": "مركز أبنوب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.10599108,
+        27.29492579
+      ]
+    },
+    "adjacencyIds": [
+      "EG2513",
+      "EG1608",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1413",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Abour",
+    "nameAr": "قسم العبور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.44741533,
+        30.2247542
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG0100",
+      "EG1400"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2303",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Abshaway",
+    "nameAr": "مركز أبشواى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.6901011,
+        29.37436967
+      ]
+    },
+    "adjacencyIds": [
+      "EG2304",
+      "EG1608",
+      "EG2302",
+      "EG2305",
+      "EG2307"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1803",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Abu-l-Matamir",
+    "nameAr": "مركز ابوالمطامير",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.14414086,
+        30.77312654
+      ]
+    },
+    "adjacencyIds": [
+      "EG1804",
+      "EG1805",
+      "EG0213",
+      "EG1818",
+      "EG1608",
+      "EG1808",
+      "EG1812",
+      "EG1817",
+      "EG0200",
+      "EG1800"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1304",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Abu Hammad",
+    "nameAr": "مركز أبو حماد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.64926762,
+        30.54330839
+      ]
+    },
+    "adjacencyIds": [
+      "EG1305",
+      "EG1307",
+      "EG1608",
+      "EG1308",
+      "EG1312",
+      "EG1315",
+      "EG1320",
+      "EG1905",
+      "EG1303",
+      "EG1300"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1804",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Abu Hummus",
+    "nameAr": "مركز ابوحمص",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.31029499,
+        31.10584913
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG1806",
+      "EG1608",
+      "EG1802",
+      "EG1808",
+      "EG1816",
+      "EG1812"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1305",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Abu Kabir",
+    "nameAr": "مركز أبوكبير",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.68961004,
+        30.73261252
+      ]
+    },
+    "adjacencyIds": [
+      "EG1304",
+      "EG1608",
+      "EG1317",
+      "EG1312",
+      "EG1315",
+      "EG1313"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3503",
+    "parentId": "EG35",
+    "level": 2,
+    "nameEn": "Abu Radis",
+    "nameAr": "قسم أبو رديس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.59781529,
+        29.04939859
+      ]
+    },
+    "adjacencyIds": [
+      "EG3501",
+      "EG1608",
+      "EG3507",
+      "EG3502",
+      "EG3504"
+    ],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG2807",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Abu Simbel",
+    "nameAr": "مركز أبوسنبل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.59908679,
+        22.62431489
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2800"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG2505",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Abu Tig",
+    "nameAr": "مركز أبوتيج",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.28889656,
+        27.03655018
+      ]
+    },
+    "adjacencyIds": [
+      "EG2508",
+      "EG2503",
+      "EG1608",
+      "EG2511",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2703",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Abu Tisht",
+    "nameAr": "مركز أبو طشت",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.08623048,
+        26.12960513
+      ]
+    },
+    "adjacencyIds": [
+      "EG2605",
+      "EG1608",
+      "EG2710",
+      "EG2708",
+      "EG2600",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2803",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Adfu",
+    "nameAr": "مركز أدفو",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.95673042,
+        25.06093989
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2705",
+      "EG2804",
+      "EG2800",
+      "EG2700"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG1204",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Aga",
+    "nameAr": "مركز أجا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.31346698,
+        30.89531022
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1203",
+      "EG1213",
+      "EG1205"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2206",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Ahnasya",
+    "nameAr": "مركز أهناسيا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.9431998,
+        29.10161328
+      ]
+    },
+    "adjacencyIds": [
+      "EG2202",
+      "EG1608",
+      "EG2207",
+      "EG2302",
+      "EG2209",
+      "EG2208",
+      "EG2200",
+      "EG2300"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0130",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Ain Shams",
+    "nameAr": "قسم عينشمس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.33003863,
+        30.12265349
+      ]
+    },
+    "adjacencyIds": [
+      "EG0125",
+      "EG0132",
+      "EG0124",
+      "EG1608",
+      "EG0128",
+      "EG0129"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2604",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Akhmim",
+    "nameAr": "مركز أخميم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.71479748,
+        26.55082882
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2608",
+      "EG2616",
+      "EG2612",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2618",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Akhmim City",
+    "nameAr": "مدينة أخميم الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.86515734,
+        26.5237523
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2506",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Al- Badari",
+    "nameAr": "مركز البدارى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.45620124,
+        26.94646337
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2507",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2102",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Al-Aguza",
+    "nameAr": "قسم العجوزة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.20432519,
+        30.05898821
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2105",
+      "EG2103",
+      "EG2101",
+      "EG2120",
+      "EG2117"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2106",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Al-Ahram",
+    "nameAr": "قسم الأهرام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.13634936,
+        29.99021265
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2105",
+      "EG2109",
+      "EG2120",
+      "EG2118",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0302",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Al-Arab",
+    "nameAr": "قسم العرب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.29399453,
+        31.26190402
+      ]
+    },
+    "adjacencyIds": [
+      "EG0305",
+      "EG0303",
+      "EG0301",
+      "EG1608"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0402",
+    "parentId": "EG04",
+    "level": 2,
+    "nameEn": "Al-Arbiin",
+    "nameAr": "قسم الأربعين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.5356173,
+        29.98007116
+      ]
+    },
+    "adjacencyIds": [
+      "EG0405",
+      "EG0403",
+      "EG1608",
+      "EG0404",
+      "EG0401"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1704",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Al-Bagur",
+    "nameAr": "مركز الباجور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.03249615,
+        30.41270032
+      ]
+    },
+    "adjacencyIds": [
+      "EG1703",
+      "EG1402",
+      "EG1608",
+      "EG1709",
+      "EG1708",
+      "EG1702",
+      "EG1710"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2605",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Al-Balyana",
+    "nameAr": "مركز البلينا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.94429481,
+        26.24100362
+      ]
+    },
+    "adjacencyIds": [
+      "EG2703",
+      "EG1608",
+      "EG2610",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG0305",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Al-Dawahy",
+    "nameAr": "قسم الضواحى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.27951804,
+        31.24625424
+      ]
+    },
+    "adjacencyIds": [
+      "EG0302",
+      "EG0310",
+      "EG0303",
+      "EG0301",
+      "EG0307",
+      "EG1608"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1805",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Al-Dilingat",
+    "nameAr": "مركز الدلنجات",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.48995703,
+        30.81012178
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG1818",
+      "EG1608",
+      "EG1802",
+      "EG1808",
+      "EG1807",
+      "EG1813"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0405",
+    "parentId": "EG04",
+    "level": 2,
+    "nameEn": "Al-Ganayin",
+    "nameAr": "قسم الجناين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.70256254,
+        30.06291036
+      ]
+    },
+    "adjacencyIds": [
+      "EG0402",
+      "EG3406",
+      "EG1608",
+      "EG1907",
+      "EG0404",
+      "EG3407",
+      "EG0406",
+      "EG1908",
+      "EG3502"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG0306",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Al-Ganoub",
+    "nameAr": "قسم الجنوب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.29136884,
+        31.14080705
+      ]
+    },
+    "adjacencyIds": [
+      "EG0311",
+      "EG1306",
+      "EG0310",
+      "EG1608"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0311",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Al-Ganoub 2",
+    "nameAr": "قسم ثان الجنوب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.25397259,
+        30.99327443
+      ]
+    },
+    "adjacencyIds": [
+      "EG0306",
+      "EG1306",
+      "EG1608",
+      "EG1906"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2508",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Al-Ghanayem",
+    "nameAr": "مركز الغنايم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.3286369,
+        26.9217302
+      ]
+    },
+    "adjacencyIds": [
+      "EG2505",
+      "EG1608",
+      "EG2511",
+      "EG2613",
+      "EG2500",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG3302",
+    "parentId": "EG33",
+    "level": 2,
+    "nameEn": "Al-Hammam",
+    "nameAr": "قسم الحمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.41793162,
+        29.80359105
+      ]
+    },
+    "adjacencyIds": [
+      "EG3307",
+      "EG1608",
+      "EG0214",
+      "EG3304",
+      "EG0218",
+      "EG3308",
+      "EG1817",
+      "EG0200",
+      "EG1800",
+      "EG2100"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG3406",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "Al-Hasna",
+    "nameAr": "قسم الحسنة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.54224018,
+        30.28825262
+      ]
+    },
+    "adjacencyIds": [
+      "EG0405",
+      "EG1608",
+      "EG3405",
+      "EG3404",
+      "EG3407",
+      "EG1908",
+      "EG3411",
+      "EG3408"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG1306",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Al-Husayniya",
+    "nameAr": "مركز الحسينية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.00605382,
+        30.92374249
+      ]
+    },
+    "adjacencyIds": [
+      "EG0306",
+      "EG0311",
+      "EG1307",
+      "EG1319",
+      "EG1608",
+      "EG1209",
+      "EG1312",
+      "EG1207",
+      "EG1906"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3201",
+    "parentId": "EG32",
+    "level": 2,
+    "nameEn": "Al-Kharga Oasis",
+    "nameAr": "مركز الواحات الخارجة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.01345352,
+        24.96398407
+      ]
+    },
+    "adjacencyIds": [
+      "EG3202",
+      "EG1608",
+      "EG2705",
+      "EG3204",
+      "EG2800",
+      "EG2500",
+      "EG2600",
+      "EG2700"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG1806",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Al-Mahmudiyya",
+    "nameAr": "مركز المحمودية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.48806883,
+        31.19691784
+      ]
+    },
+    "adjacencyIds": [
+      "EG1804",
+      "EG1815",
+      "EG1608",
+      "EG1802",
+      "EG1816",
+      "EG1809"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0310",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Al-Manasra",
+    "nameAr": "قسم المناصرة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.17303588,
+        31.2371881
+      ]
+    },
+    "adjacencyIds": [
+      "EG0305",
+      "EG0306",
+      "EG0307",
+      "EG1608",
+      "EG1102"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2606",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Al-Maragha",
+    "nameAr": "مركز المراغة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.5877047,
+        26.66877557
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2611",
+      "EG2603",
+      "EG2614",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2607",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Al-Minshat",
+    "nameAr": "مركز المنشأة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.75577529,
+        26.46418529
+      ]
+    },
+    "adjacencyIds": [
+      "EG2617",
+      "EG1608",
+      "EG2603",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG0303",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Al-Munakh",
+    "nameAr": "قسم المناخ",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.28727198,
+        31.26496764
+      ]
+    },
+    "adjacencyIds": [
+      "EG0302",
+      "EG0305",
+      "EG0307",
+      "EG1608"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1318",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Al-Qanayat",
+    "nameAr": "قسم القنايات",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.47070362,
+        30.63453854
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1303"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2509",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Al-Qusia",
+    "nameAr": "مركز القوصية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.82637782,
+        27.40301562
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2510",
+      "EG2512",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1815",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Al-Rahmaniyya",
+    "nameAr": "مركز الرحمانية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.58394312,
+        31.10623814
+      ]
+    },
+    "adjacencyIds": [
+      "EG1806",
+      "EG1608",
+      "EG1802",
+      "EG1810"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1307",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Al-Salhiyya",
+    "nameAr": "قسم الصالحية الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.00562576,
+        30.6342612
+      ]
+    },
+    "adjacencyIds": [
+      "EG1304",
+      "EG1306",
+      "EG1608",
+      "EG1312",
+      "EG1904",
+      "EG1906",
+      "EG1320",
+      "EG1905"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0301",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Al-Sharq",
+    "nameAr": "قسم الشرق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.30730045,
+        31.26312596
+      ]
+    },
+    "adjacencyIds": [
+      "EG0302",
+      "EG0305",
+      "EG1608",
+      "EG0312"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1705",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Al-Shuhada",
+    "nameAr": "مركز الشهداء",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.86987038,
+        30.6010708
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1709",
+      "EG1702",
+      "EG1707"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3501",
+    "parentId": "EG35",
+    "level": 2,
+    "nameEn": "Al-Tur",
+    "nameAr": "قسم الطور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.75327612,
+        28.36472811
+      ]
+    },
+    "adjacencyIds": [
+      "EG3503",
+      "EG1608",
+      "EG3504",
+      "EG3505"
+    ],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG0307",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Al-Zohour",
+    "nameAr": "قسم الزهور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.26583991,
+        31.26572572
+      ]
+    },
+    "adjacencyIds": [
+      "EG0305",
+      "EG0310",
+      "EG0303",
+      "EG1608"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0213",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Al Amreia",
+    "nameAr": "قسم العامرية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.82759488,
+        30.95892416
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG0212",
+      "EG1608",
+      "EG0214",
+      "EG0216",
+      "EG1812",
+      "EG0217",
+      "EG0205",
+      "EG0200"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0206",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Al Attarin",
+    "nameAr": "قسم العطارين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.90400845,
+        31.19811328
+      ]
+    },
+    "adjacencyIds": [
+      "EG0209",
+      "EG0207",
+      "EG0204",
+      "EG1608",
+      "EG0208",
+      "EG0205"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0113",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Azbakiyya",
+    "nameAr": "قسم الأزبكية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24585442,
+        30.0600347
+      ]
+    },
+    "adjacencyIds": [
+      "EG0109",
+      "EG0118",
+      "EG0117",
+      "EG0116",
+      "EG1608",
+      "EG0112",
+      "EG0110",
+      "EG0111",
+      "EG0120",
+      "EG0119"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0114",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Darb al-Ahmar",
+    "nameAr": "قسم الدرب الأحمر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.26011199,
+        30.04140441
+      ]
+    },
+    "adjacencyIds": [
+      "EG0109",
+      "EG0108",
+      "EG1608",
+      "EG0115",
+      "EG0134",
+      "EG0110",
+      "EG0107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0212",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Al Dikhila",
+    "nameAr": "قسم الدخيلة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.80608436,
+        31.1185624
+      ]
+    },
+    "adjacencyIds": [
+      "EG0213",
+      "EG0211",
+      "EG0215"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG3203",
+    "parentId": "EG32",
+    "level": 2,
+    "nameEn": "Al Farafra Oasis",
+    "nameAr": "مركز الفرافرة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        26.760442,
+        27.20514434
+      ]
+    },
+    "adjacencyIds": [
+      "EG3202",
+      "EG1608",
+      "EG3306",
+      "EG2100",
+      "EG2400"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG2204",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Al Fashn",
+    "nameAr": "مركز الفشن",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.82738688,
+        28.80879774
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2207",
+      "EG2405",
+      "EG2410",
+      "EG2208",
+      "EG2200",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0210",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Al Gumruk",
+    "nameAr": "قسم الجمرك",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.87851276,
+        31.20348379
+      ]
+    },
+    "adjacencyIds": [
+      "EG0209",
+      "EG0207",
+      "EG1608",
+      "EG0215"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG1511",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Al Hamul",
+    "nameAr": "مركز الحامول",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.07532809,
+        31.38751518
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1504",
+      "EG1503",
+      "EG1502",
+      "EG1512",
+      "EG1507"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0108",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Khalifa",
+    "nameAr": "قسم الخليفة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.29601008,
+        30.01036599
+      ]
+    },
+    "adjacencyIds": [
+      "EG0114",
+      "EG0135",
+      "EG1608",
+      "EG0127",
+      "EG0134",
+      "EG0106",
+      "EG0126",
+      "EG0107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1403",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Al Khanka",
+    "nameAr": "مركز الخانكة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.35785285,
+        30.2305157
+      ]
+    },
+    "adjacencyIds": [
+      "EG0132",
+      "EG1608",
+      "EG1412",
+      "EG0136",
+      "EG1316",
+      "EG1410",
+      "EG1405",
+      "EG1300",
+      "EG1400"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0207",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Al Manshiyya",
+    "nameAr": "قسم المنشية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.8922597,
+        31.1984817
+      ]
+    },
+    "adjacencyIds": [
+      "EG0209",
+      "EG0206",
+      "EG0210",
+      "EG1608"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0125",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Matariyya",
+    "nameAr": "قسم المطرية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.30398167,
+        30.12796892
+      ]
+    },
+    "adjacencyIds": [
+      "EG0130",
+      "EG0132",
+      "EG0124",
+      "EG1608",
+      "EG1412",
+      "EG0136",
+      "EG1407"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0202",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Al Raml",
+    "nameAr": "قسم أول الرمل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.98579268,
+        31.23674335
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG0217",
+      "EG0201",
+      "EG0203"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0121",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Sahil",
+    "nameAr": "قسم الساحل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24721676,
+        30.09212796
+      ]
+    },
+    "adjacencyIds": [
+      "EG0118",
+      "EG1608",
+      "EG0120",
+      "EG0119",
+      "EG1406",
+      "EG0131"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0132",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Salam",
+    "nameAr": "قسم السلام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.42819373,
+        30.1622057
+      ]
+    },
+    "adjacencyIds": [
+      "EG0130",
+      "EG1403",
+      "EG0125",
+      "EG1608",
+      "EG0136",
+      "EG0129",
+      "EG0140",
+      "EG0100",
+      "EG1400"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0118",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Sharabiyya",
+    "nameAr": "قسم الشرابية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.26412388,
+        30.08196457
+      ]
+    },
+    "adjacencyIds": [
+      "EG0113",
+      "EG0121",
+      "EG0117",
+      "EG1608",
+      "EG0123",
+      "EG0119",
+      "EG0131"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0101",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Tibbin",
+    "nameAr": "قسم التبين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.33665594,
+        29.78062223
+      ]
+    },
+    "adjacencyIds": [
+      "EG0103",
+      "EG1608",
+      "EG0102",
+      "EG2111",
+      "EG0100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2617",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Al Usayrat",
+    "nameAr": "مركز العسيرات",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.81481154,
+        26.40081976
+      ]
+    },
+    "adjacencyIds": [
+      "EG2607",
+      "EG1608",
+      "EG2610",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2712",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Al Waqf",
+    "nameAr": "مركز الوقف",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.44842794,
+        26.08438526
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2708",
+      "EG2702",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2205",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Al Wasta",
+    "nameAr": "مركز الواسطى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.17024322,
+        29.32399806
+      ]
+    },
+    "adjacencyIds": [
+      "EG2112",
+      "EG1608",
+      "EG2209",
+      "EG2100",
+      "EG2200"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0122",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Wayli",
+    "nameAr": "قسم الوايلي",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.28341275,
+        30.07160933
+      ]
+    },
+    "adjacencyIds": [
+      "EG0117",
+      "EG0124",
+      "EG1608",
+      "EG0123",
+      "EG0127",
+      "EG0134",
+      "EG0128"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0117",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Zahir",
+    "nameAr": "قسم الظاهر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.26809428,
+        30.06279613
+      ]
+    },
+    "adjacencyIds": [
+      "EG0113",
+      "EG0118",
+      "EG0122",
+      "EG0116",
+      "EG1608",
+      "EG0115",
+      "EG0123",
+      "EG0134"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0124",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Al Zaytun",
+    "nameAr": "قسم الزيتون",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.30125807,
+        30.100449
+      ]
+    },
+    "adjacencyIds": [
+      "EG0130",
+      "EG0125",
+      "EG0122",
+      "EG1608",
+      "EG0123",
+      "EG0128",
+      "EG1407",
+      "EG0131"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3307",
+    "parentId": "EG33",
+    "level": 2,
+    "nameEn": "Alamn",
+    "nameAr": "قسم مارينا العلمين السياحية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        28.74008581,
+        30.78217952
+      ]
+    },
+    "adjacencyIds": [
+      "EG3302",
+      "EG1608",
+      "EG3304"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG2513",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Alfath",
+    "nameAr": "مركز الفتح",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.21189666,
+        27.21806618
+      ]
+    },
+    "adjacencyIds": [
+      "EG2504",
+      "EG1608",
+      "EG2507",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2704",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Armant",
+    "nameAr": "مركز أرمنت",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.49194383,
+        25.61169659
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2705",
+      "EG2902",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1703",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Ashmun",
+    "nameAr": "مركز أشمون",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.00832635,
+        30.29921495
+      ]
+    },
+    "adjacencyIds": [
+      "EG1704",
+      "EG1608",
+      "EG1709",
+      "EG1404"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2503",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Assuit",
+    "nameAr": "مركز أسيوط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.23215375,
+        27.11677928
+      ]
+    },
+    "adjacencyIds": [
+      "EG2505",
+      "EG1608",
+      "EG2501",
+      "EG2502",
+      "EG2512",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2514",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Assuit City",
+    "nameAr": "مدينة اسيوط الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.28085748,
+        27.25430695
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2801",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Aswan",
+    "nameAr": "قسم أسوان",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.9014693,
+        24.06280468
+      ]
+    },
+    "adjacencyIds": [
+      "EG2802",
+      "EG1608",
+      "EG2800"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG2802",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Aswan",
+    "nameAr": "مركز أسوان",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.83077982,
+        23.97173132
+      ]
+    },
+    "adjacencyIds": [
+      "EG2801",
+      "EG1608",
+      "EG2806",
+      "EG2800"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG2808",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Aswan City",
+    "nameAr": "مدينة أسوان الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.98283111,
+        24.06750739
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2800"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG0403",
+    "parentId": "EG04",
+    "level": 2,
+    "nameEn": "Ataqa",
+    "nameAr": "قسم عتاقة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.12799945,
+        29.53854369
+      ]
+    },
+    "adjacencyIds": [
+      "EG0402",
+      "EG1608",
+      "EG0404",
+      "EG3105",
+      "EG0100",
+      "EG2100",
+      "EG2200"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2115",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Atfeh",
+    "nameAr": "مركز أطفيح",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.25016224,
+        29.34272016
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2209",
+      "EG2111",
+      "EG2100",
+      "EG2200"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2304",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Atsa",
+    "nameAr": "مركز أطسا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.7672634,
+        29.20836002
+      ]
+    },
+    "adjacencyIds": [
+      "EG2303",
+      "EG1608",
+      "EG2302",
+      "EG2307",
+      "EG2300"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2116",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Auseem",
+    "nameAr": "مركز أوسيم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.14153477,
+        30.13164718
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2113",
+      "EG2120",
+      "EG2117"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1319",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Awlad Saqr",
+    "nameAr": "مركز أولاد صقر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.77694782,
+        30.96934711
+      ]
+    },
+    "adjacencyIds": [
+      "EG1306",
+      "EG1218",
+      "EG1608",
+      "EG1209",
+      "EG1312",
+      "EG1313",
+      "EG1207",
+      "EG1216"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2112",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Ayat",
+    "nameAr": "مركز العياط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24981162,
+        29.56420986
+      ]
+    },
+    "adjacencyIds": [
+      "EG2205",
+      "EG2110",
+      "EG1608",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0116",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Bab Al-Shariyya",
+    "nameAr": "قسم باب الشعرية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.25799446,
+        30.05877007
+      ]
+    },
+    "adjacencyIds": [
+      "EG0113",
+      "EG0117",
+      "EG1608",
+      "EG0115",
+      "EG0110"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0204",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Bab Sharqi",
+    "nameAr": "قسم باب شرقى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.92102924,
+        31.20502404
+      ]
+    },
+    "adjacencyIds": [
+      "EG0206",
+      "EG0217",
+      "EG0205",
+      "EG0203"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0141",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Badr",
+    "nameAr": "قسم بدر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.70628631,
+        30.1363098
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG0138",
+      "EG0140",
+      "EG0100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1818",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Badr",
+    "nameAr": "مركز بدر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.67858174,
+        30.54671167
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG1805",
+      "EG1608",
+      "EG1813",
+      "EG1711",
+      "EG1800"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2110",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Badrashain",
+    "nameAr": "مركز البدرشين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.25831466,
+        29.82365402
+      ]
+    },
+    "adjacencyIds": [
+      "EG2112",
+      "EG1608",
+      "EG2109",
+      "EG2108",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2114",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Bahariya Oasis",
+    "nameAr": "قسم الواحاتالبحرية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        28.8363314,
+        28.45212855
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1401",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Banha",
+    "nameAr": "قسم بنها",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.19022124,
+        30.46596668
+      ]
+    },
+    "adjacencyIds": [
+      "EG1402",
+      "EG1608"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1402",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Banha",
+    "nameAr": "مركز بنها",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24795153,
+        30.44266145
+      ]
+    },
+    "adjacencyIds": [
+      "EG1704",
+      "EG1401",
+      "EG1608",
+      "EG1411",
+      "EG1314",
+      "EG1708",
+      "EG1405",
+      "EG1408"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2201",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Bani Swayf",
+    "nameAr": "قسم بنى سويف",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.09734952,
+        29.07680552
+      ]
+    },
+    "adjacencyIds": [
+      "EG2202",
+      "EG1608"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2202",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Bani Swayf",
+    "nameAr": "مركز بنى سويف",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.04169817,
+        29.09814894
+      ]
+    },
+    "adjacencyIds": [
+      "EG2206",
+      "EG2201",
+      "EG2203",
+      "EG1608",
+      "EG2207",
+      "EG2209",
+      "EG2200"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2203",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Bani Swayf City",
+    "nameAr": "قسم مدينة بنى سويف الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.15947366,
+        28.98226245
+      ]
+    },
+    "adjacencyIds": [
+      "EG2202",
+      "EG1608",
+      "EG2200"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1218",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Bany Abeed",
+    "nameAr": "مركز بنى عبيد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.64827195,
+        31.02418714
+      ]
+    },
+    "adjacencyIds": [
+      "EG1319",
+      "EG1608",
+      "EG1209",
+      "EG1203",
+      "EG1216"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0135",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Basatin",
+    "nameAr": "قسم البساتين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.29304583,
+        29.98022105
+      ]
+    },
+    "adjacencyIds": [
+      "EG0108",
+      "EG1608",
+      "EG0104",
+      "EG0106",
+      "EG0126",
+      "EG0139"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1608",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Basyun",
+    "nameAr": "مركز بسيون",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.82706527,
+        30.95890025
+      ]
+    },
+    "adjacencyIds": [
+      "EG1309",
+      "EG1321",
+      "EG0103",
+      "EG2107",
+      "EG2121",
+      "EG3202",
+      "EG0209",
+      "EG0109",
+      "EG2504",
+      "EG1413",
+      "EG2303",
+      "EG1803",
+      "EG1304",
+      "EG1804",
+      "EG1305",
+      "EG3503",
+      "EG2807",
+      "EG2505",
+      "EG2703",
+      "EG2803",
+      "EG1204",
+      "EG2206",
+      "EG0130",
+      "EG2604",
+      "EG2618",
+      "EG2506",
+      "EG2102",
+      "EG2106",
+      "EG0302",
+      "EG0402",
+      "EG1704",
+      "EG2605",
+      "EG0305",
+      "EG1805",
+      "EG0405",
+      "EG0306",
+      "EG0311",
+      "EG2508",
+      "EG3302",
+      "EG3406",
+      "EG1306",
+      "EG3201",
+      "EG1806",
+      "EG0310",
+      "EG2606",
+      "EG2607",
+      "EG0303",
+      "EG1318",
+      "EG2509",
+      "EG1815",
+      "EG1307",
+      "EG0301",
+      "EG1705",
+      "EG3501",
+      "EG0307",
+      "EG0213",
+      "EG0206",
+      "EG0113",
+      "EG0114",
+      "EG3203",
+      "EG2204",
+      "EG0210",
+      "EG1511",
+      "EG0108",
+      "EG1403",
+      "EG0207",
+      "EG0125",
+      "EG0202",
+      "EG0121",
+      "EG0132",
+      "EG0118",
+      "EG0101",
+      "EG2617",
+      "EG2712",
+      "EG2205",
+      "EG0122",
+      "EG0117",
+      "EG0124",
+      "EG3307",
+      "EG2513",
+      "EG2704",
+      "EG1703",
+      "EG2503",
+      "EG2514",
+      "EG2801",
+      "EG2802",
+      "EG2808",
+      "EG0403",
+      "EG2115",
+      "EG2304",
+      "EG2116",
+      "EG1319",
+      "EG2112",
+      "EG0116",
+      "EG0204",
+      "EG0141",
+      "EG1818",
+      "EG2110",
+      "EG2114",
+      "EG1401",
+      "EG1402",
+      "EG2201",
+      "EG2202",
+      "EG2203",
+      "EG1218",
+      "EG0135",
+      "EG2207",
+      "EG1308",
+      "EG1208",
+      "EG3405",
+      "EG1706",
+      "EG1504",
+      "EG0112",
+      "EG2105",
+      "EG0214",
+      "EG0216",
+      "EG1503",
+      "EG3304",
+      "EG3506",
+      "EG1801",
+      "EG1802",
+      "EG2608",
+      "EG2806",
+      "EG2510",
+      "EG1209",
+      "EG2706",
+      "EG1505",
+      "EG1506",
+      "EG1102",
+      "EG1101",
+      "EG1109",
+      "EG1105",
+      "EG2103",
+      "EG1310",
+      "EG1202",
+      "EG1317",
+      "EG3401",
+      "EG3402",
+      "EG3403",
+      "EG3404",
+      "EG1607",
+      "EG1605",
+      "EG1606",
+      "EG1203",
+      "EG1201",
+      "EG1311",
+      "EG1312",
+      "EG1103",
+      "EG2710",
+      "EG1907",
+      "EG0404",
+      "EG2301",
+      "EG2302",
+      "EG2308",
+      "EG1508",
+      "EG0115",
+      "EG1215",
+      "EG1220",
+      "EG2609",
+      "EG2610",
+      "EG2104",
+      "EG2109",
+      "EG2611",
+      "EG0123",
+      "EG3107",
+      "EG1315",
+      "EG0102",
+      "EG3101",
+      "EG3108",
+      "EG2108",
+      "EG1816",
+      "EG2101",
+      "EG2113",
+      "EG1904",
+      "EG1901",
+      "EG1902",
+      "EG1903",
+      "EG2705",
+      "EG1807",
+      "EG1811",
+      "EG1812",
+      "EG1501",
+      "EG1502",
+      "EG1612",
+      "EG1104",
+      "EG1313",
+      "EG1411",
+      "EG2120",
+      "EG0208",
+      "EG2616",
+      "EG2401",
+      "EG2501",
+      "EG2411",
+      "EG2615",
+      "EG0217",
+      "EG2502",
+      "EG1412",
+      "EG1813",
+      "EG2804",
+      "EG2901",
+      "EG2902",
+      "EG0104",
+      "EG0127",
+      "EG1219",
+      "EG2512",
+      "EG1207",
+      "EG0136",
+      "EG2404",
+      "EG2405",
+      "EG2402",
+      "EG2406",
+      "EG2407",
+      "EG2410",
+      "EG2412",
+      "EG2409",
+      "EG2408",
+      "EG3104",
+      "EG3301",
+      "EG1316",
+      "EG1206",
+      "EG0211",
+      "EG0134",
+      "EG1709",
+      "EG1712",
+      "EG1214",
+      "EG1314",
+      "EG0128",
+      "EG0106",
+      "EG1212",
+      "EG1213",
+      "EG1217",
+      "EG1510",
+      "EG0309",
+      "EG0205",
+      "EG0201",
+      "EG0110",
+      "EG2708",
+      "EG3407",
+      "EG2709",
+      "EG2209",
+      "EG2805",
+      "EG0126",
+      "EG1221",
+      "EG0137",
+      "EG0138",
+      "EG0139",
+      "EG2403",
+      "EG0218",
+      "EG3308",
+      "EG1817",
+      "EG3507",
+      "EG0129",
+      "EG3204",
+      "EG1108",
+      "EG0312",
+      "EG0215",
+      "EG0304",
+      "EG0308",
+      "EG0406",
+      "EG1414",
+      "EG1409",
+      "EG1410",
+      "EG1404",
+      "EG1906",
+      "EG1908",
+      "EG3411",
+      "EG0111",
+      "EG2711",
+      "EG1509",
+      "EG2701",
+      "EG2702",
+      "EG2713",
+      "EG1320",
+      "EG2707",
+      "EG3102",
+      "EG1611",
+      "EG1708",
+      "EG3409",
+      "EG1106",
+      "EG3105",
+      "EG3502",
+      "EG1512",
+      "EG0120",
+      "EG3410",
+      "EG1711",
+      "EG2111",
+      "EG3103",
+      "EG2507",
+      "EG3303",
+      "EG1610",
+      "EG3504",
+      "EG1604",
+      "EG2612",
+      "EG0107",
+      "EG3106",
+      "EG3505",
+      "EG2119",
+      "EG3408",
+      "EG1701",
+      "EG1702",
+      "EG1405",
+      "EG1210",
+      "EG0140",
+      "EG0119",
+      "EG1406",
+      "EG1407",
+      "EG1810",
+      "EG2511",
+      "EG3305",
+      "EG0203",
+      "EG1507",
+      "EG1205",
+      "EG2305",
+      "EG1710",
+      "EG3306",
+      "EG0401",
+      "EG2601",
+      "EG2603",
+      "EG2602",
+      "EG2619",
+      "EG2208",
+      "EG3508",
+      "EG2614",
+      "EG1905",
+      "EG1707",
+      "EG1211",
+      "EG2613",
+      "EG1216",
+      "EG2306",
+      "EG1603",
+      "EG1601",
+      "EG1602",
+      "EG2903",
+      "EG1408",
+      "EG0105",
+      "EG2809",
+      "EG2118",
+      "EG1814",
+      "EG2117",
+      "EG2307",
+      "EG0133",
+      "EG1303",
+      "EG1301",
+      "EG1302",
+      "EG1107",
+      "EG0131",
+      "EG0100",
+      "EG0200",
+      "EG1300",
+      "EG1400",
+      "EG1800",
+      "EG2100",
+      "EG2200",
+      "EG2400",
+      "EG2800",
+      "EG2900",
+      "EG2500",
+      "EG2600",
+      "EG2700",
+      "EG1609"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2207",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Biba",
+    "nameAr": "مركز ببا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.96710958,
+        28.95138917
+      ]
+    },
+    "adjacencyIds": [
+      "EG2206",
+      "EG2204",
+      "EG2202",
+      "EG1608",
+      "EG2208",
+      "EG2200"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1308",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Bilbis",
+    "nameAr": "مركز بلبيس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.53105184,
+        30.40752612
+      ]
+    },
+    "adjacencyIds": [
+      "EG1304",
+      "EG1608",
+      "EG1316",
+      "EG1314",
+      "EG1303",
+      "EG1300"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1208",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Bilqas",
+    "nameAr": "مركز بلقاس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.37935931,
+        31.34403595
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1504",
+      "EG1503",
+      "EG1220",
+      "EG1104",
+      "EG1221",
+      "EG1210",
+      "EG1211"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3405",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "Bir Al-Abd",
+    "nameAr": "قسم بئر العبد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.10158503,
+        30.69012049
+      ]
+    },
+    "adjacencyIds": [
+      "EG3406",
+      "EG1608",
+      "EG3404",
+      "EG1908",
+      "EG3410"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG1706",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Birkat Al-Sab",
+    "nameAr": "مركز بركة السبع",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.10814076,
+        30.65129905
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1708",
+      "EG1604",
+      "EG1702",
+      "EG1707",
+      "EG1603",
+      "EG1609"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1504",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Biyalu",
+    "nameAr": "مركز بيلا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24784686,
+        31.31950135
+      ]
+    },
+    "adjacencyIds": [
+      "EG1511",
+      "EG1608",
+      "EG1208",
+      "EG1503",
+      "EG1607",
+      "EG1502",
+      "EG1221"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0112",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Bulaq",
+    "nameAr": "قسم بولاق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.23415993,
+        30.06202785
+      ]
+    },
+    "adjacencyIds": [
+      "EG0113",
+      "EG1608",
+      "EG0111",
+      "EG0120"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2105",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Bulaq Al-DakrUr",
+    "nameAr": "قسم بولاق الدكرور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.19001934,
+        30.03027274
+      ]
+    },
+    "adjacencyIds": [
+      "EG2102",
+      "EG2106",
+      "EG1608",
+      "EG2103",
+      "EG2104",
+      "EG2120",
+      "EG2118"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0214",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Burg al-Arab",
+    "nameAr": "قسم برج العرب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.49397559,
+        30.90121245
+      ]
+    },
+    "adjacencyIds": [
+      "EG3302",
+      "EG0213",
+      "EG1608",
+      "EG0216",
+      "EG0218",
+      "EG3308",
+      "EG0200"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0216",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Burg Al-Arab City",
+    "nameAr": "مدينه برج العرب الجديده",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.62224007,
+        30.8987898
+      ]
+    },
+    "adjacencyIds": [
+      "EG0213",
+      "EG1608",
+      "EG0214"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG1503",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Burullus",
+    "nameAr": "مركز البرلس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.27331411,
+        31.52141084
+      ]
+    },
+    "adjacencyIds": [
+      "EG1511",
+      "EG1608",
+      "EG1208",
+      "EG1504"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3304",
+    "parentId": "EG33",
+    "level": 2,
+    "nameEn": "Daba",
+    "nameAr": "مركز الضبعة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        28.24286276,
+        29.46332504
+      ]
+    },
+    "adjacencyIds": [
+      "EG3302",
+      "EG3307",
+      "EG1608",
+      "EG3301",
+      "EG3306",
+      "EG2100"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG3506",
+    "parentId": "EG35",
+    "level": 2,
+    "nameEn": "Dahab",
+    "nameAr": "قسم دهب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.45078662,
+        28.73029145
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3507",
+      "EG3504"
+    ],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG1801",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Damanhur",
+    "nameAr": "قسم دمنهور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.46250878,
+        31.04898058
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1802"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1802",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Damanhur",
+    "nameAr": "مركز دمنهور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.52713592,
+        31.03174608
+      ]
+    },
+    "adjacencyIds": [
+      "EG1804",
+      "EG1805",
+      "EG1806",
+      "EG1815",
+      "EG1608",
+      "EG1801",
+      "EG1808",
+      "EG1807",
+      "EG1810"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2608",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Dar al-Salam",
+    "nameAr": "مركز دار السلام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.0434416,
+        26.27369111
+      ]
+    },
+    "adjacencyIds": [
+      "EG2604",
+      "EG1608",
+      "EG2708",
+      "EG2600",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2806",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Daraw",
+    "nameAr": "مركز دراو",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.00058453,
+        24.32555242
+      ]
+    },
+    "adjacencyIds": [
+      "EG2802",
+      "EG1608",
+      "EG2804",
+      "EG2805",
+      "EG2800"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG2510",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Dayrut",
+    "nameAr": "مركز ديروط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.78222411,
+        27.53711682
+      ]
+    },
+    "adjacencyIds": [
+      "EG2509",
+      "EG1608",
+      "EG2407",
+      "EG2400",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1209",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Dikirnis",
+    "nameAr": "مركز دكرنس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.7801441,
+        31.09314136
+      ]
+    },
+    "adjacencyIds": [
+      "EG1306",
+      "EG1319",
+      "EG1218",
+      "EG1608",
+      "EG1203",
+      "EG1219",
+      "EG1207",
+      "EG1214",
+      "EG1210",
+      "EG1107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2706",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Dishna",
+    "nameAr": "مركز دشنا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.44377681,
+        26.1418727
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2708",
+      "EG2702",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1505",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Disuq",
+    "nameAr": "قسم دسوق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.6488964,
+        31.14512059
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1506"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1506",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Disuq",
+    "nameAr": "مركز دسوق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.71983865,
+        31.14955054
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1505",
+      "EG1508",
+      "EG1502",
+      "EG1509",
+      "EG1507"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1102",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Dumyat",
+    "nameAr": "مركز دمياط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.84205813,
+        31.44026861
+      ]
+    },
+    "adjacencyIds": [
+      "EG0310",
+      "EG1608",
+      "EG1101",
+      "EG1109",
+      "EG1105",
+      "EG1103",
+      "EG1104",
+      "EG1217",
+      "EG1108",
+      "EG1106"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1101",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Dumyat 1",
+    "nameAr": "قسم أول دمياط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.8067865,
+        31.40693084
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1102",
+      "EG1109"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1109",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Dumyat 2",
+    "nameAr": "قسم ثان دمياط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.81853983,
+        31.42505125
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1102",
+      "EG1101"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1105",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Dumyat Al-Gadida",
+    "nameAr": "قسم مدينه دمياط الجديده",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.70597401,
+        31.4388295
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1102",
+      "EG1104",
+      "EG1108"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2103",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "DuqqI",
+    "nameAr": "قسم الدقي",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.20822266,
+        30.04242001
+      ]
+    },
+    "adjacencyIds": [
+      "EG2102",
+      "EG1608",
+      "EG2105",
+      "EG2104"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1310",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Dyarb Nigm",
+    "nameAr": "مركز ديرب نجم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.44388852,
+        30.75237143
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1317",
+      "EG1315",
+      "EG1313",
+      "EG1213",
+      "EG1205",
+      "EG1303"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1202",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "E Mansora 2",
+    "nameAr": "قسم ثان المنصورة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.41868348,
+        31.04740656
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1203",
+      "EG1201"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1317",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "El-Ibrahimiya",
+    "nameAr": "مركز الأبراهيمية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.56419628,
+        30.73152491
+      ]
+    },
+    "adjacencyIds": [
+      "EG1305",
+      "EG1608",
+      "EG1310",
+      "EG1315",
+      "EG1313"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3401",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "El Arish 1",
+    "nameAr": "قسم أول العريش",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.82429875,
+        31.11980133
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3402",
+      "EG3403",
+      "EG3408"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG3402",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "El Arish 2",
+    "nameAr": "قسم ثان العريش",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.75084223,
+        31.09021853
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3401",
+      "EG3403",
+      "EG3404"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG3403",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "El Arish 3",
+    "nameAr": "قسم ثالث العريش",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.77663353,
+        30.99502225
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3401",
+      "EG3402",
+      "EG3404",
+      "EG3408"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG3404",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "El Arish 4",
+    "nameAr": "قسم رابع العريش",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.59570642,
+        30.85120336
+      ]
+    },
+    "adjacencyIds": [
+      "EG3406",
+      "EG1608",
+      "EG3405",
+      "EG3402",
+      "EG3403",
+      "EG3408"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG1607",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "El Mahalla El Kobra",
+    "nameAr": "مركز المحله الكبرى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.13037843,
+        31.01736518
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1504",
+      "EG1605",
+      "EG1606",
+      "EG1502",
+      "EG1221",
+      "EG1611",
+      "EG1610",
+      "EG1604",
+      "EG1603"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1605",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "El Mahalla El Kobra 1",
+    "nameAr": "قسم أول المحلة الكبرى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.17185409,
+        30.97196255
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1607",
+      "EG1606"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1606",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "El Mahalla El Kobra 2",
+    "nameAr": "قسم ثان المحلة الكبرى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.15713824,
+        30.97141115
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1607",
+      "EG1605"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1203",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "El Mansora",
+    "nameAr": "مركز المنصورة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.46727616,
+        31.05279543
+      ]
+    },
+    "adjacencyIds": [
+      "EG1204",
+      "EG1218",
+      "EG1608",
+      "EG1209",
+      "EG1202",
+      "EG1201",
+      "EG1219",
+      "EG1210",
+      "EG1205",
+      "EG1216"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1201",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "El Mansora 1",
+    "nameAr": "قسم اول المنصورة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.37484911,
+        31.02880206
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1202",
+      "EG1203"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1311",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Faqus",
+    "nameAr": "قسم فاقوس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.79814098,
+        30.723424
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1312"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1312",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Faqus",
+    "nameAr": "مركز فاقوس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.89614087,
+        30.74926057
+      ]
+    },
+    "adjacencyIds": [
+      "EG1304",
+      "EG1305",
+      "EG1306",
+      "EG1307",
+      "EG1319",
+      "EG1608",
+      "EG1311",
+      "EG1313",
+      "EG1320"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1103",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Fariskur",
+    "nameAr": "مركز فارسكور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.73266394,
+        31.31001882
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1102",
+      "EG1217",
+      "EG1107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2710",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Farshut",
+    "nameAr": "مركز فرشوط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.14948086,
+        26.05612702
+      ]
+    },
+    "adjacencyIds": [
+      "EG2703",
+      "EG1608",
+      "EG2708",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1907",
+    "parentId": "EG19",
+    "level": 2,
+    "nameEn": "Fayid",
+    "nameAr": "مركز فايد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.29183219,
+        30.3662741
+      ]
+    },
+    "adjacencyIds": [
+      "EG0405",
+      "EG1608",
+      "EG0404",
+      "EG1904"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0404",
+    "parentId": "EG04",
+    "level": 2,
+    "nameEn": "Faysal",
+    "nameAr": "قسم فيصل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.18073587,
+        30.11799049
+      ]
+    },
+    "adjacencyIds": [
+      "EG0402",
+      "EG0405",
+      "EG0403",
+      "EG1608",
+      "EG1907",
+      "EG1904",
+      "EG1905",
+      "EG0100",
+      "EG1300"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2301",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Fayyum",
+    "nameAr": "قسم الفيوم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.83938662,
+        29.31401376
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2302"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2302",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Fayyum",
+    "nameAr": "مركز الفيوم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.95527793,
+        29.29955188
+      ]
+    },
+    "adjacencyIds": [
+      "EG2303",
+      "EG2206",
+      "EG2304",
+      "EG1608",
+      "EG2301",
+      "EG2209",
+      "EG2305",
+      "EG2306",
+      "EG2200",
+      "EG2300"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2308",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Fayyum City",
+    "nameAr": "مدينة الفيوم الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.88173239,
+        29.20841854
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2300"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1508",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Fuwwa",
+    "nameAr": "مركز فوه",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.56374053,
+        31.23200186
+      ]
+    },
+    "adjacencyIds": [
+      "EG1506",
+      "EG1510",
+      "EG1507"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0115",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Gamaliyya",
+    "nameAr": "قسم الجمالية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.26455471,
+        30.05366362
+      ]
+    },
+    "adjacencyIds": [
+      "EG0114",
+      "EG0117",
+      "EG0116",
+      "EG1608",
+      "EG0134",
+      "EG0110"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1215",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Gamaliyya",
+    "nameAr": "مركز الجمالية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.85208386,
+        31.2050801
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1207",
+      "EG1217"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1220",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Gamsa",
+    "nameAr": "قسم جمصة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.54940211,
+        31.43827052
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1208",
+      "EG1104"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2609",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Girga",
+    "nameAr": "قسم جرجا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.88824813,
+        26.34816214
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2610"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2610",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Girga",
+    "nameAr": "مركز جرجا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.86679545,
+        26.30675013
+      ]
+    },
+    "adjacencyIds": [
+      "EG2605",
+      "EG2617",
+      "EG1608",
+      "EG2609",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2104",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Giza",
+    "nameAr": "قسم الجيزة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.21578804,
+        29.99947746
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2105",
+      "EG2103",
+      "EG2109",
+      "EG2118"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2109",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Giza",
+    "nameAr": "مركز الجيزة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.2127223,
+        29.94317591
+      ]
+    },
+    "adjacencyIds": [
+      "EG2106",
+      "EG2110",
+      "EG1608",
+      "EG2104",
+      "EG2108",
+      "EG2118",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2611",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Guhayna Al-Gharbiyya",
+    "nameAr": "مركز جهينة الغربية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.47052858,
+        26.68868333
+      ]
+    },
+    "adjacencyIds": [
+      "EG2606",
+      "EG1608",
+      "EG2615",
+      "EG2614",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG0123",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Hadaiq Al-Qubba",
+    "nameAr": "قسم حدائقالقبة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.28290808,
+        30.08554385
+      ]
+    },
+    "adjacencyIds": [
+      "EG0118",
+      "EG0122",
+      "EG0117",
+      "EG0124",
+      "EG1608",
+      "EG0131"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3107",
+    "parentId": "EG31",
+    "level": 2,
+    "nameEn": "Halayib",
+    "nameAr": "قسم حلايب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        35.99967792,
+        22.38566907
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3106"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG1315",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Hihya",
+    "nameAr": "مركز ههيا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.61700284,
+        30.65180036
+      ]
+    },
+    "adjacencyIds": [
+      "EG1304",
+      "EG1305",
+      "EG1608",
+      "EG1310",
+      "EG1317",
+      "EG1303"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0102",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Hilwan",
+    "nameAr": "قسم حلوان",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.32893498,
+        29.85378844
+      ]
+    },
+    "adjacencyIds": [
+      "EG0103",
+      "EG0101",
+      "EG1608",
+      "EG0105"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3101",
+    "parentId": "EG31",
+    "level": 2,
+    "nameEn": "Hurghada 1",
+    "nameAr": "قسم أول الغردقة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.24391464,
+        27.12888189
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3108",
+      "EG3103",
+      "EG2500",
+      "EG2600",
+      "EG2700"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG3108",
+    "parentId": "EG31",
+    "level": 2,
+    "nameEn": "Hurghada 2",
+    "nameAr": "قسم ثان الغردقة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.08031549,
+        27.74455516
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3101",
+      "EG3105",
+      "EG2500"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG1808",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Hush Isa",
+    "nameAr": "مركز حوش عيسى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.34575848,
+        30.89121824
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG1804",
+      "EG1805",
+      "EG1608",
+      "EG1802"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2108",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Hwamdeia",
+    "nameAr": "قسم الحوامدية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.25279833,
+        29.90225318
+      ]
+    },
+    "adjacencyIds": [
+      "EG2110",
+      "EG1608",
+      "EG2109"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1816",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Idku",
+    "nameAr": "مركز إدكو",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.32493349,
+        31.29825944
+      ]
+    },
+    "adjacencyIds": [
+      "EG1804",
+      "EG1806",
+      "EG1812",
+      "EG1809"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2101",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Imbaba",
+    "nameAr": "قسم امبابه",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.21038139,
+        30.08320418
+      ]
+    },
+    "adjacencyIds": [
+      "EG2102",
+      "EG1608",
+      "EG2117"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2113",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Imbaba",
+    "nameAr": "مركز إمبابة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.96274691,
+        30.21991784
+      ]
+    },
+    "adjacencyIds": [
+      "EG2116",
+      "EG1608",
+      "EG2120",
+      "EG1711",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1904",
+    "parentId": "EG19",
+    "level": 2,
+    "nameEn": "Ismailiyya",
+    "nameAr": "مركز الاسماعيلية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.18334162,
+        30.426153
+      ]
+    },
+    "adjacencyIds": [
+      "EG1307",
+      "EG1608",
+      "EG1907",
+      "EG0404",
+      "EG1901",
+      "EG1906",
+      "EG1905"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1901",
+    "parentId": "EG19",
+    "level": 2,
+    "nameEn": "Ismailiyya 1",
+    "nameAr": "قسم أول الاسماعيلية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.31093867,
+        30.60632882
+      ]
+    },
+    "adjacencyIds": [
+      "EG1904",
+      "EG1902",
+      "EG1903",
+      "EG1906"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1902",
+    "parentId": "EG19",
+    "level": 2,
+    "nameEn": "Ismailiyya 2",
+    "nameAr": "قسم ثان الاسماعيلية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.26034467,
+        30.61370149
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1901",
+      "EG1903",
+      "EG1906"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1903",
+    "parentId": "EG19",
+    "level": 2,
+    "nameEn": "Ismailiyya 3",
+    "nameAr": "قسم ثالث الاسماعيلية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.29104384,
+        30.61219109
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1901",
+      "EG1902"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2705",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Isna",
+    "nameAr": "مركز إسنا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.51970635,
+        25.36493051
+      ]
+    },
+    "adjacencyIds": [
+      "EG2803",
+      "EG3201",
+      "EG2704",
+      "EG1608",
+      "EG2902",
+      "EG2800",
+      "EG2900",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1807",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Itay Al-Barud",
+    "nameAr": "مركز إيتاى البارود",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.65601513,
+        30.88558547
+      ]
+    },
+    "adjacencyIds": [
+      "EG1805",
+      "EG1802",
+      "EG1813",
+      "EG1810"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1811",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Kafr Al-Dawwar",
+    "nameAr": "قسم كفرالدوار",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.13294612,
+        31.13727256
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1812"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1812",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Kafr Al-Dawwar",
+    "nameAr": "مركز كفر الدوار",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.03757396,
+        31.12882124
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG1804",
+      "EG0213",
+      "EG1608",
+      "EG1816",
+      "EG1811",
+      "EG0217",
+      "EG0201"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1501",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Kafr Al-Shaykh",
+    "nameAr": "قسم كفر الشيخ",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.94145981,
+        31.11904642
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1502"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1502",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Kafr Al-Shaykh",
+    "nameAr": "مركز كفر الشيخ",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.01608635,
+        31.20020562
+      ]
+    },
+    "adjacencyIds": [
+      "EG1511",
+      "EG1608",
+      "EG1504",
+      "EG1506",
+      "EG1607",
+      "EG1501",
+      "EG1509",
+      "EG1611",
+      "EG1512",
+      "EG1507"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1612",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Kafr Al-Zayyat",
+    "nameAr": "مركز كفر الزيات",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.83528992,
+        30.80717488
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1707",
+      "EG1603"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1104",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Kafr Sad",
+    "nameAr": "مركز كفر سعد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.60348925,
+        31.35882675
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1208",
+      "EG1102",
+      "EG1105",
+      "EG1220",
+      "EG1210"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1313",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Kafr Saqr",
+    "nameAr": "مركز كفر صقر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.67463945,
+        30.83665106
+      ]
+    },
+    "adjacencyIds": [
+      "EG1305",
+      "EG1319",
+      "EG1608",
+      "EG1310",
+      "EG1317",
+      "EG1312",
+      "EG1205",
+      "EG1216"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1411",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Kafr Shukr",
+    "nameAr": "مركز كفر شكر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.27473127,
+        30.55438914
+      ]
+    },
+    "adjacencyIds": [
+      "EG1402",
+      "EG1608",
+      "EG1314",
+      "EG1213",
+      "EG1303"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2120",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Kardasa",
+    "nameAr": "مركز كرداسة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.13449763,
+        30.05145473
+      ]
+    },
+    "adjacencyIds": [
+      "EG2102",
+      "EG2106",
+      "EG2116",
+      "EG1608",
+      "EG2105",
+      "EG2113",
+      "EG2117",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0208",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Karmuz",
+    "nameAr": "قسم كرموز",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.9037698,
+        31.17936477
+      ]
+    },
+    "adjacencyIds": [
+      "EG0209",
+      "EG0206",
+      "EG1608",
+      "EG0211",
+      "EG0205"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG2616",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Kawther",
+    "nameAr": "قسم الكوثر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.7222803,
+        26.55546637
+      ]
+    },
+    "adjacencyIds": [
+      "EG2604",
+      "EG1608"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2401",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Kesm Al-minya",
+    "nameAr": "قسم المنيا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.74419416,
+        28.09527375
+      ]
+    },
+    "adjacencyIds": [
+      "EG2402"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2501",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Kesm Awal Assuit",
+    "nameAr": "قسم أول أسيوط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.15363528,
+        27.18610668
+      ]
+    },
+    "adjacencyIds": [
+      "EG2503",
+      "EG1608",
+      "EG2502",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2411",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Kesm Mallawi",
+    "nameAr": "قسم ملوى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.83748521,
+        27.72910737
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2407",
+      "EG2412"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2615",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Kesm Tahta",
+    "nameAr": "قسم طهطا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.49206358,
+        26.76651598
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2611",
+      "EG2614"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG0217",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Kesm than Al Raml",
+    "nameAr": "قسم ثان الرمل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.99447711,
+        31.21127748
+      ]
+    },
+    "adjacencyIds": [
+      "EG0213",
+      "EG0202",
+      "EG1608",
+      "EG1812",
+      "EG0205",
+      "EG0201",
+      "EG0203"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG2502",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Kesm Than Assuit",
+    "nameAr": "قسم ثان أسيوط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.17875998,
+        27.19321519
+      ]
+    },
+    "adjacencyIds": [
+      "EG2503",
+      "EG1608",
+      "EG2501"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1412",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Khsos",
+    "nameAr": "قسم الخصوص",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.31759461,
+        30.15722177
+      ]
+    },
+    "adjacencyIds": [
+      "EG1403",
+      "EG0125",
+      "EG0136",
+      "EG1410",
+      "EG1407"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1813",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Kum Hamada",
+    "nameAr": "مركز كوم حمادة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.7739189,
+        30.65414719
+      ]
+    },
+    "adjacencyIds": [
+      "EG1805",
+      "EG1818",
+      "EG1807",
+      "EG1711"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2804",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Kum Umbu",
+    "nameAr": "مركز كوم امبو",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.94651338,
+        24.479974
+      ]
+    },
+    "adjacencyIds": [
+      "EG2803",
+      "EG1608",
+      "EG2806",
+      "EG2805",
+      "EG2800"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG2901",
+    "parentId": "EG29",
+    "level": 2,
+    "nameEn": "Luxor",
+    "nameAr": "قسم الأقصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.66983615,
+        25.70712487
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2902",
+      "EG2903",
+      "EG2900",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2902",
+    "parentId": "EG29",
+    "level": 2,
+    "nameEn": "Luxor",
+    "nameAr": "مركز الأقصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.58841652,
+        25.68451075
+      ]
+    },
+    "adjacencyIds": [
+      "EG2704",
+      "EG1608",
+      "EG2705",
+      "EG2901",
+      "EG2709",
+      "EG2900",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG0104",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Maadi",
+    "nameAr": "قسم المعادي",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.36791677,
+        29.96342541
+      ]
+    },
+    "adjacencyIds": [
+      "EG0135",
+      "EG1608",
+      "EG0139",
+      "EG0105"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0127",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Madinat Nasr-2",
+    "nameAr": "قسم ثانمدينةنصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.30859273,
+        30.04817479
+      ]
+    },
+    "adjacencyIds": [
+      "EG0108",
+      "EG0122",
+      "EG1608",
+      "EG0134",
+      "EG0128",
+      "EG0126"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1219",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Mahalet Demna",
+    "nameAr": "مركز محلة دمنة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.51316083,
+        31.09033898
+      ]
+    },
+    "adjacencyIds": [
+      "EG1209",
+      "EG1203"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2512",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Manfalut",
+    "nameAr": "مركز منفلوط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.95120144,
+        27.29423756
+      ]
+    },
+    "adjacencyIds": [
+      "EG2509",
+      "EG2503",
+      "EG1608",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1207",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Manzala",
+    "nameAr": "مركز المنزلة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.95799841,
+        31.15254631
+      ]
+    },
+    "adjacencyIds": [
+      "EG1306",
+      "EG1319",
+      "EG1608",
+      "EG1209",
+      "EG1215",
+      "EG1206",
+      "EG1214",
+      "EG1217"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0136",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Marg",
+    "nameAr": "قسم المرج",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.34620156,
+        30.15581506
+      ]
+    },
+    "adjacencyIds": [
+      "EG1403",
+      "EG0125",
+      "EG0132",
+      "EG1608",
+      "EG1412"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2404",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Abu Qurqas",
+    "nameAr": "مركز ابو قرقاص",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.77022197,
+        27.93914736
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2402",
+      "EG2412",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2405",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Al Idwa",
+    "nameAr": "مركز العدوة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.73951973,
+        28.69620249
+      ]
+    },
+    "adjacencyIds": [
+      "EG2204",
+      "EG1608",
+      "EG2410",
+      "EG2200",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2402",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Al Minya",
+    "nameAr": "مركز المنيا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.64066534,
+        28.10116262
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2401",
+      "EG2404",
+      "EG2408",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2406",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Bani Mazar",
+    "nameAr": "مركز بنى مزار",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.73107663,
+        28.5182766
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2410",
+      "EG2409",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2407",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Dir Mawas",
+    "nameAr": "مركز دير مواس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.79032735,
+        27.65467926
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2510",
+      "EG2411",
+      "EG2412",
+      "EG2400",
+      "EG2500"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2410",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Maghagha",
+    "nameAr": "مركز مغاغة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.79439037,
+        28.64055663
+      ]
+    },
+    "adjacencyIds": [
+      "EG2204",
+      "EG1608",
+      "EG2405",
+      "EG2406",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2412",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Mallawi",
+    "nameAr": "مركز ملوى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.80124845,
+        27.77487173
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2411",
+      "EG2404",
+      "EG2407",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2409",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Matay",
+    "nameAr": "مركز مطاى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.70975153,
+        28.43094573
+      ]
+    },
+    "adjacencyIds": [
+      "EG2406",
+      "EG2408",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2408",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Markz Samalut",
+    "nameAr": "مركز سمالوط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.62940087,
+        28.28469014
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2402",
+      "EG2409",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG3104",
+    "parentId": "EG31",
+    "level": 2,
+    "nameEn": "Marsa Alam",
+    "nameAr": "قسم مرسى علم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.28558673,
+        24.70693152
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3102",
+      "EG3106",
+      "EG2800",
+      "EG2700"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG3301",
+    "parentId": "EG33",
+    "level": 2,
+    "nameEn": "Marsa Matruh",
+    "nameAr": "قسم مرسى مطروح",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        26.9968074,
+        30.02195299
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3304",
+      "EG3305",
+      "EG3306",
+      "EG2100"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG1316",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Mashtul Al-Suq",
+    "nameAr": "مركز مشتول السوق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.38337887,
+        30.36115174
+      ]
+    },
+    "adjacencyIds": [
+      "EG1403",
+      "EG1608",
+      "EG1308",
+      "EG1314",
+      "EG1405",
+      "EG1300"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1206",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Matariyya",
+    "nameAr": "مركز المطرية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.00361474,
+        31.19067391
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1207"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0211",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Mina Al-Basal",
+    "nameAr": "قسم مينا البصل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.88017089,
+        31.16717534
+      ]
+    },
+    "adjacencyIds": [
+      "EG0209",
+      "EG0212",
+      "EG1608",
+      "EG0208",
+      "EG0215"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0134",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Minshat Nasir",
+    "nameAr": "منشأةناصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.28396176,
+        30.04284771
+      ]
+    },
+    "adjacencyIds": [
+      "EG0114",
+      "EG0108",
+      "EG0122",
+      "EG0117",
+      "EG1608",
+      "EG0115",
+      "EG0127"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1709",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Minuf",
+    "nameAr": "مركز منوف",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.88098696,
+        30.45966842
+      ]
+    },
+    "adjacencyIds": [
+      "EG1704",
+      "EG1705",
+      "EG1703",
+      "EG1608",
+      "EG1712",
+      "EG1702",
+      "EG1710"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1712",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Minuf City",
+    "nameAr": "قسم مدينة منوف",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.93088878,
+        30.46226008
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1709",
+      "EG1710"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1214",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Minya Al-Nasr",
+    "nameAr": "مركز منية النصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.70722121,
+        31.15392702
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1209",
+      "EG1207",
+      "EG1217",
+      "EG1107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1314",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Minya al-Qamh",
+    "nameAr": "مركز منيا القمح",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.36907011,
+        30.5073467
+      ]
+    },
+    "adjacencyIds": [
+      "EG1402",
+      "EG1608",
+      "EG1308",
+      "EG1411",
+      "EG1316",
+      "EG1405",
+      "EG1303"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0128",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Misr al-Gadida",
+    "nameAr": "قسم مصرالجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.32733026,
+        30.0907133
+      ]
+    },
+    "adjacencyIds": [
+      "EG0130",
+      "EG0122",
+      "EG0124",
+      "EG1608",
+      "EG0127",
+      "EG0126",
+      "EG0129"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0106",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Misr Al-Qadima",
+    "nameAr": "مصرالقديمة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24188728,
+        30.00550963
+      ]
+    },
+    "adjacencyIds": [
+      "EG0108",
+      "EG0135",
+      "EG1608",
+      "EG0107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1212",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Mit Ghamr",
+    "nameAr": "قسم ميت غمر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.27569267,
+        30.71307835
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1213"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1213",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Mit Ghamr",
+    "nameAr": "مركز ميت غمر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.3379642,
+        30.70807721
+      ]
+    },
+    "adjacencyIds": [
+      "EG1204",
+      "EG1608",
+      "EG1310",
+      "EG1411",
+      "EG1212",
+      "EG1205",
+      "EG1303"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1217",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "MIt Salsil",
+    "nameAr": "مركز ميت سلسيل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.79171337,
+        31.23274151
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1102",
+      "EG1103",
+      "EG1215",
+      "EG1207",
+      "EG1214",
+      "EG1107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1510",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Mitubas",
+    "nameAr": "مركز مطوبس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.46992412,
+        31.38291427
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1508",
+      "EG1507"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0309",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Mubark-Sharq Tafrea",
+    "nameAr": "قسم مبارك - شرق التفريعة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.4299708,
+        31.06697658
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1908",
+      "EG3410"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0205",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Muharam Bik",
+    "nameAr": "قسم محرم بك",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.93882596,
+        31.18402265
+      ]
+    },
+    "adjacencyIds": [
+      "EG0213",
+      "EG0206",
+      "EG0204",
+      "EG1608",
+      "EG0208",
+      "EG0217",
+      "EG0203"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0201",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Muntazah",
+    "nameAr": "قسم المنتزة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.03048135,
+        31.26426137
+      ]
+    },
+    "adjacencyIds": [
+      "EG0202",
+      "EG1608",
+      "EG1812",
+      "EG0217"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0110",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Muski",
+    "nameAr": "قسم الموسكي",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.25239218,
+        30.0504347
+      ]
+    },
+    "adjacencyIds": [
+      "EG0109",
+      "EG0113",
+      "EG0114",
+      "EG0116",
+      "EG1608",
+      "EG0115"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2708",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Nag Hammadi",
+    "nameAr": "مركز نجع حمادى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.29716135,
+        26.08523775
+      ]
+    },
+    "adjacencyIds": [
+      "EG2703",
+      "EG2712",
+      "EG1608",
+      "EG2608",
+      "EG2706",
+      "EG2710",
+      "EG2600",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG3407",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "Nakhl",
+    "nameAr": "قسم نخل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.02429967,
+        29.90919106
+      ]
+    },
+    "adjacencyIds": [
+      "EG0405",
+      "EG3406",
+      "EG1608",
+      "EG3507",
+      "EG3411",
+      "EG3502",
+      "EG3508"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG2709",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Naqada",
+    "nameAr": "مركز نقادة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.71056368,
+        25.89031902
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2902",
+      "EG2702",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2209",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Nasir",
+    "nameAr": "مركز ناصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.07831814,
+        29.18659305
+      ]
+    },
+    "adjacencyIds": [
+      "EG2206",
+      "EG2205",
+      "EG2115",
+      "EG2202",
+      "EG1608",
+      "EG2302",
+      "EG2200"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2805",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Nasr",
+    "nameAr": "مركز نصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.93159187,
+        24.37301443
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2806",
+      "EG2804",
+      "EG2800"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG0126",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Nasr City",
+    "nameAr": "قسم أول مدينة نصر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.3694274,
+        30.0320702
+      ]
+    },
+    "adjacencyIds": [
+      "EG0108",
+      "EG0135",
+      "EG1608",
+      "EG0127",
+      "EG0128",
+      "EG0137",
+      "EG0138",
+      "EG0139",
+      "EG0129",
+      "EG0140"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1221",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Nebro",
+    "nameAr": "مركز نبروة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.29662112,
+        31.12856443
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1208",
+      "EG1504",
+      "EG1607",
+      "EG1610",
+      "EG1211"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0137",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "New Cairo-1",
+    "nameAr": "قسم أول القاهرة الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.54960872,
+        30.0242492
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG0126",
+      "EG0138",
+      "EG0139",
+      "EG0100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0138",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "New Cairo-2",
+    "nameAr": "قسم ثان القاهرة الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.58236481,
+        30.07352277
+      ]
+    },
+    "adjacencyIds": [
+      "EG0141",
+      "EG1608",
+      "EG0126",
+      "EG0137",
+      "EG0129",
+      "EG0140",
+      "EG0100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0139",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "New Cairo-3",
+    "nameAr": "قسم ثالث القاهرة الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.45574128,
+        29.97752694
+      ]
+    },
+    "adjacencyIds": [
+      "EG0135",
+      "EG1608",
+      "EG0104",
+      "EG0126",
+      "EG0137",
+      "EG0105",
+      "EG0100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2403",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "New Minya",
+    "nameAr": "مدينة المنيا الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.78831856,
+        28.1096466
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0218",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "North Coast",
+    "nameAr": "الساحل الشمالى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.47512969,
+        30.93455288
+      ]
+    },
+    "adjacencyIds": [
+      "EG3302",
+      "EG1608",
+      "EG0214",
+      "EG3308"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG3308",
+    "parentId": "EG33",
+    "level": 2,
+    "nameEn": "North Coast",
+    "nameAr": "قسم الساحل الشمالى-جزء",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.28124252,
+        30.86117024
+      ]
+    },
+    "adjacencyIds": [
+      "EG3302",
+      "EG1608",
+      "EG0218"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG1817",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Nubariyya West",
+    "nameAr": "قسم غرب النوبارية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.89725643,
+        30.42486146
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG3302",
+      "EG1608",
+      "EG0200",
+      "EG1800"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3507",
+    "parentId": "EG35",
+    "level": 2,
+    "nameEn": "Nuweiba",
+    "nameAr": "قسم نويبع",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.311738,
+        29.3137184
+      ]
+    },
+    "adjacencyIds": [
+      "EG3503",
+      "EG1608",
+      "EG3506",
+      "EG3407",
+      "EG3502",
+      "EG3504",
+      "EG3508"
+    ],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG0129",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Nuzha",
+    "nameAr": "قسم النزهة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.3887951,
+        30.11522515
+      ]
+    },
+    "adjacencyIds": [
+      "EG0130",
+      "EG0132",
+      "EG1608",
+      "EG0128",
+      "EG0126",
+      "EG0138",
+      "EG0140"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3204",
+    "parentId": "EG32",
+    "level": 2,
+    "nameEn": "Paris Paris",
+    "nameAr": "مركز باريس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.41184044,
+        22.7365943
+      ]
+    },
+    "adjacencyIds": [
+      "EG3202",
+      "EG3201",
+      "EG1608",
+      "EG2800"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG1108",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Police Department Port of Damietta",
+    "nameAr": "إداره شرطه ميناء دمياط الجديد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.77766304,
+        31.46620728
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1102",
+      "EG1105"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0312",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Police Department Port Said Port",
+    "nameAr": "إدارة شرطة ميناء بورسعيد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.30113498,
+        31.25422354
+      ]
+    },
+    "adjacencyIds": [
+      "EG0301",
+      "EG1608",
+      "EG0304"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0215",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Port Alexandria Police Department",
+    "nameAr": "اداره شرطه ميناء الأسكندريه",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.87603383,
+        31.18040747
+      ]
+    },
+    "adjacencyIds": [
+      "EG0209",
+      "EG0212",
+      "EG0210",
+      "EG1608",
+      "EG0211"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0304",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Port Fuad",
+    "nameAr": "قسم بور فؤاد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.33039249,
+        31.23554228
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG0312",
+      "EG0308"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0308",
+    "parentId": "EG03",
+    "level": 2,
+    "nameEn": "Port Fuad 2",
+    "nameAr": "قسم ثان بور فؤاد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.31776337,
+        31.16965408
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG0304"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0406",
+    "parentId": "EG04",
+    "level": 2,
+    "nameEn": "Port Suez Police Department",
+    "nameAr": "إدارة شرطة ميناء السويس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.61861637,
+        29.88153033
+      ]
+    },
+    "adjacencyIds": [
+      "EG0405",
+      "EG1608",
+      "EG3502"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1414",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Qaha",
+    "nameAr": "قسم قها",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.21514451,
+        30.29328335
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1410",
+      "EG1404",
+      "EG1408"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1409",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Qalyub",
+    "nameAr": "قسم قليوب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.21582683,
+        30.17996823
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1410",
+      "EG1404"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1410",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Qalyub",
+    "nameAr": "مركز قليوب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.21418507,
+        30.20700621
+      ]
+    },
+    "adjacencyIds": [
+      "EG1403",
+      "EG1608",
+      "EG1412",
+      "EG1414",
+      "EG1409",
+      "EG1404",
+      "EG1405",
+      "EG1406",
+      "EG1407",
+      "EG1408"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1404",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Qanatir Al-Khayriyya",
+    "nameAr": "مركز القناطر الخيرية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.13514612,
+        30.21394069
+      ]
+    },
+    "adjacencyIds": [
+      "EG1703",
+      "EG1608",
+      "EG1414",
+      "EG1409",
+      "EG1410",
+      "EG1406",
+      "EG1408"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1906",
+    "parentId": "EG19",
+    "level": 2,
+    "nameEn": "Qantara Gharb, al-",
+    "nameAr": "مركز القنطرة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.24461716,
+        30.74175591
+      ]
+    },
+    "adjacencyIds": [
+      "EG0311",
+      "EG1306",
+      "EG1307",
+      "EG1608",
+      "EG1904",
+      "EG1901",
+      "EG1902"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1908",
+    "parentId": "EG19",
+    "level": 2,
+    "nameEn": "Qantara Sharq, al-",
+    "nameAr": "قسم القنطرة شرق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.55016812,
+        30.6032662
+      ]
+    },
+    "adjacencyIds": [
+      "EG0405",
+      "EG3406",
+      "EG1608",
+      "EG3405",
+      "EG0309",
+      "EG3410"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3411",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "Qasima",
+    "nameAr": "قسم القسيمة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.30095759,
+        30.46355984
+      ]
+    },
+    "adjacencyIds": [
+      "EG3406",
+      "EG1608",
+      "EG3407",
+      "EG3409",
+      "EG3408"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG0111",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Qasr Al-Nile",
+    "nameAr": "قسم قصر النيل",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.23513065,
+        30.04308012
+      ]
+    },
+    "adjacencyIds": [
+      "EG0109",
+      "EG0113",
+      "EG1608",
+      "EG0112",
+      "EG0107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2711",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Qift",
+    "nameAr": "مركز قفط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.82685988,
+        25.99770195
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2702",
+      "EG2707",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1509",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Qillin",
+    "nameAr": "مركز قلين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.81732339,
+        31.08528534
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1506",
+      "EG1502",
+      "EG1611"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2701",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Qina",
+    "nameAr": "قسم قنا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.71237614,
+        26.16511094
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2702",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2702",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Qina",
+    "nameAr": "مركز قنا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.57770419,
+        26.16256926
+      ]
+    },
+    "adjacencyIds": [
+      "EG2712",
+      "EG1608",
+      "EG2706",
+      "EG2709",
+      "EG2711",
+      "EG2701",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2713",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Qina City",
+    "nameAr": "مدينة قنا الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.76121499,
+        26.17337732
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1320",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Qurin",
+    "nameAr": "قسم القرين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.74239719,
+        30.61051284
+      ]
+    },
+    "adjacencyIds": [
+      "EG1304",
+      "EG1307",
+      "EG1608",
+      "EG1312"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2707",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Qus",
+    "nameAr": "مركز قوص",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.78881056,
+        25.85692151
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2711",
+      "EG2903",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG3102",
+    "parentId": "EG31",
+    "level": 2,
+    "nameEn": "Qusir",
+    "nameAr": "قسم القصير",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.95052207,
+        25.95669031
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3104",
+      "EG3103",
+      "EG2800",
+      "EG2700"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG1611",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Qutur",
+    "nameAr": "مركز قطور",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.97000679,
+        30.97051801
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1607",
+      "EG1502",
+      "EG1509",
+      "EG1603"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1708",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Quwisna",
+    "nameAr": "مركز قويسنا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.16323531,
+        30.55963564
+      ]
+    },
+    "adjacencyIds": [
+      "EG1704",
+      "EG1402",
+      "EG1608",
+      "EG1706",
+      "EG1702",
+      "EG1609"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3409",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "Rafah",
+    "nameAr": "قسم رفح",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.22684661,
+        31.08660233
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3411",
+      "EG3408"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG1106",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Ras al-Bar",
+    "nameAr": "قسم رأس البر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.83036002,
+        31.50965685
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1102"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3105",
+    "parentId": "EG31",
+    "level": 2,
+    "nameEn": "Ras Gharib",
+    "nameAr": "قسم رأس غارب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.37696766,
+        28.50629722
+      ]
+    },
+    "adjacencyIds": [
+      "EG0403",
+      "EG1608",
+      "EG3108",
+      "EG2100",
+      "EG2200",
+      "EG2400",
+      "EG2500"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG3502",
+    "parentId": "EG35",
+    "level": 2,
+    "nameEn": "Ras Sidr",
+    "nameAr": "قسم رأس سدر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.31744279,
+        29.59933439
+      ]
+    },
+    "adjacencyIds": [
+      "EG3503",
+      "EG0405",
+      "EG1608",
+      "EG3407",
+      "EG3507",
+      "EG0406"
+    ],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG1809",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Rashid",
+    "nameAr": "مركز رشيد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.37496527,
+        31.37875874
+      ]
+    },
+    "adjacencyIds": [
+      "EG1806",
+      "EG1608",
+      "EG1816"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1512",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Riyad",
+    "nameAr": "مركز الرياض",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.9203609,
+        31.32066801
+      ]
+    },
+    "adjacencyIds": [
+      "EG1511",
+      "EG1608",
+      "EG1502",
+      "EG1507"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0120",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Rud Al-Farag",
+    "nameAr": "قسم روضالفرج",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.23754308,
+        30.07468275
+      ]
+    },
+    "adjacencyIds": [
+      "EG0113",
+      "EG0121",
+      "EG1608",
+      "EG0112",
+      "EG0119"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3410",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "Rummana",
+    "nameAr": "قسم رمانة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.69869741,
+        30.95660446
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3405",
+      "EG0309",
+      "EG1908"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG1711",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Sadat City",
+    "nameAr": "مركز السادات",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.66134829,
+        30.35845668
+      ]
+    },
+    "adjacencyIds": [
+      "EG1818",
+      "EG1608",
+      "EG2113",
+      "EG1813",
+      "EG1800",
+      "EG2100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2111",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Saf",
+    "nameAr": "مركز الصف",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.30466989,
+        29.61987812
+      ]
+    },
+    "adjacencyIds": [
+      "EG0101",
+      "EG2115",
+      "EG1608",
+      "EG0100",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG3103",
+    "parentId": "EG31",
+    "level": 2,
+    "nameEn": "Safaga",
+    "nameAr": "قسم سفاجا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.46049466,
+        26.73173007
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3101",
+      "EG3102",
+      "EG2700"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG2507",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Sahil Silim",
+    "nameAr": "مركز ساحل سليم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.34935522,
+        27.09305048
+      ]
+    },
+    "adjacencyIds": [
+      "EG2506",
+      "EG2513",
+      "EG1608",
+      "EG2500"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG3303",
+    "parentId": "EG33",
+    "level": 2,
+    "nameEn": "Salloum",
+    "nameAr": "قسم السلوم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        25.25463704,
+        30.64589389
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3305",
+      "EG3306"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG1610",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Samannud",
+    "nameAr": "مركز سمنود",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.22131809,
+        30.95044076
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1607",
+      "EG1221",
+      "EG1604",
+      "EG1211",
+      "EG1609"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3504",
+    "parentId": "EG35",
+    "level": 2,
+    "nameEn": "Sant Katrin",
+    "nameAr": "قسم سانت كاترين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.05176215,
+        28.65972175
+      ]
+    },
+    "adjacencyIds": [
+      "EG3503",
+      "EG3501",
+      "EG1608",
+      "EG3506",
+      "EG3507",
+      "EG3505"
+    ],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG1604",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Santa",
+    "nameAr": "مركز السنطة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.11884209,
+        30.7731973
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1706",
+      "EG1607",
+      "EG1610",
+      "EG1603",
+      "EG1609"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2612",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Saqulta",
+    "nameAr": "مركز ساقلته",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.66332449,
+        26.69188694
+      ]
+    },
+    "adjacencyIds": [
+      "EG2604",
+      "EG1608",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG0107",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Sayyida Zainab",
+    "nameAr": "قسم السيدة زينب",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24183483,
+        30.0298408
+      ]
+    },
+    "adjacencyIds": [
+      "EG0109",
+      "EG0114",
+      "EG0108",
+      "EG1608",
+      "EG0106",
+      "EG0111"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3106",
+    "parentId": "EG31",
+    "level": 2,
+    "nameEn": "Shallatin",
+    "nameAr": "قسم شلاتين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.57402392,
+        23.07920343
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3107",
+      "EG3104",
+      "EG2800"
+    ],
+    "region": "NEW_VALLEY"
+  },
+  {
+    "_id": "EG3505",
+    "parentId": "EG35",
+    "level": 2,
+    "nameEn": "Sharm el-Sheikh",
+    "nameAr": "قسم شرم الشيخ",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.20279752,
+        28.07987961
+      ]
+    },
+    "adjacencyIds": [
+      "EG3501",
+      "EG1608",
+      "EG3504"
+    ],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG2119",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Shaykh Zayed",
+    "nameAr": "قسم الشيخ زايد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.97796329,
+        30.04898325
+      ]
+    },
+    "adjacencyIds": [
+      "EG2107",
+      "EG1608",
+      "EG2100"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG3408",
+    "parentId": "EG34",
+    "level": 2,
+    "nameEn": "Shaykh Zuwayd",
+    "nameAr": "قسم الشيخ زويد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.97086931,
+        30.91792378
+      ]
+    },
+    "adjacencyIds": [
+      "EG3406",
+      "EG1608",
+      "EG3401",
+      "EG3403",
+      "EG3404",
+      "EG3411",
+      "EG3409"
+    ],
+    "region": "NORTH_SINAI"
+  },
+  {
+    "_id": "EG1701",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Shibin al-Kum",
+    "nameAr": "قسم شبين الكوم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.9998989,
+        30.5558006
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1702"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1702",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Shibin al-Kum",
+    "nameAr": "مركز شبين الكوم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.95365356,
+        30.56063632
+      ]
+    },
+    "adjacencyIds": [
+      "EG1704",
+      "EG1705",
+      "EG1608",
+      "EG1706",
+      "EG1709",
+      "EG1708",
+      "EG1701",
+      "EG1707"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1405",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Shibin al-Qanatir",
+    "nameAr": "مركز شبين القناطر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.30693566,
+        30.29617095
+      ]
+    },
+    "adjacencyIds": [
+      "EG1403",
+      "EG1402",
+      "EG1608",
+      "EG1316",
+      "EG1314",
+      "EG1410",
+      "EG1408"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1210",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Shirbin",
+    "nameAr": "مركز شربين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.57615837,
+        31.26085039
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1208",
+      "EG1209",
+      "EG1203",
+      "EG1104",
+      "EG1211",
+      "EG1107"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0140",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Shroq",
+    "nameAr": "قسم الشروق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.54747487,
+        30.13299876
+      ]
+    },
+    "adjacencyIds": [
+      "EG0132",
+      "EG0141",
+      "EG1608",
+      "EG0126",
+      "EG0138",
+      "EG0129",
+      "EG0100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0119",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Shubra",
+    "nameAr": "قسم شبرا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.25032001,
+        30.07175894
+      ]
+    },
+    "adjacencyIds": [
+      "EG0113",
+      "EG0121",
+      "EG0118",
+      "EG1608",
+      "EG0120"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1406",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Shubra Al-Khayma 1",
+    "nameAr": "قسم أول شبرا الخيمة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.24833347,
+        30.13167686
+      ]
+    },
+    "adjacencyIds": [
+      "EG0121",
+      "EG1608",
+      "EG1410",
+      "EG1404",
+      "EG1407",
+      "EG0131"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1407",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Shubra Al-Khayma 2",
+    "nameAr": "قسم ثان شبرا الخيمة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.28518332,
+        30.1353485
+      ]
+    },
+    "adjacencyIds": [
+      "EG0125",
+      "EG0124",
+      "EG1412",
+      "EG1410",
+      "EG1406",
+      "EG0131"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1810",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Shubra Khit",
+    "nameAr": "مركز شبراخيت",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.67879655,
+        31.00270762
+      ]
+    },
+    "adjacencyIds": [
+      "EG1815",
+      "EG1608",
+      "EG1802",
+      "EG1807"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2511",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Sidfa",
+    "nameAr": "مركز صدفا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.37955957,
+        26.94330753
+      ]
+    },
+    "adjacencyIds": [
+      "EG2505",
+      "EG2508",
+      "EG1608",
+      "EG2613"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG3305",
+    "parentId": "EG33",
+    "level": 2,
+    "nameEn": "Sidi Barani",
+    "nameAr": "قسم سيدى برانى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        25.88590735,
+        30.65597293
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3301",
+      "EG3303",
+      "EG3306"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0203",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Sidi Gabir",
+    "nameAr": "قسم سيدى جابر",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.94853089,
+        31.21634408
+      ]
+    },
+    "adjacencyIds": [
+      "EG0202",
+      "EG0204",
+      "EG1608",
+      "EG0217",
+      "EG0205"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG1507",
+    "parentId": "EG15",
+    "level": 2,
+    "nameEn": "Sidi Salim",
+    "nameAr": "مركز سيدى سالم",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.7381405,
+        31.31017868
+      ]
+    },
+    "adjacencyIds": [
+      "EG1511",
+      "EG1608",
+      "EG1506",
+      "EG1508",
+      "EG1502",
+      "EG1510",
+      "EG1512"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1205",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Sinbillawin",
+    "nameAr": "مركز السنبلاوين",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.51252093,
+        30.88268107
+      ]
+    },
+    "adjacencyIds": [
+      "EG1204",
+      "EG1608",
+      "EG1310",
+      "EG1203",
+      "EG1313",
+      "EG1213",
+      "EG1216"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2305",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Sinuras",
+    "nameAr": "مركز سنورس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.81504148,
+        29.4411778
+      ]
+    },
+    "adjacencyIds": [
+      "EG2303",
+      "EG1608",
+      "EG2302",
+      "EG2306",
+      "EG2300"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1710",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Sirs Al-Layyana City",
+    "nameAr": "قسم مدينة سرس الليانة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.9687411,
+        30.44466302
+      ]
+    },
+    "adjacencyIds": [
+      "EG1704",
+      "EG1608",
+      "EG1709",
+      "EG1712"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG3306",
+    "parentId": "EG33",
+    "level": 2,
+    "nameEn": "Siwa",
+    "nameAr": "مركز سيوة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        25.58938909,
+        28.70317815
+      ]
+    },
+    "adjacencyIds": [
+      "EG3203",
+      "EG1608",
+      "EG3304",
+      "EG3301",
+      "EG3303",
+      "EG3305",
+      "EG2100"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG0401",
+    "parentId": "EG04",
+    "level": 2,
+    "nameEn": "Suez",
+    "nameAr": "قسم السويس",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.56934356,
+        29.96128978
+      ]
+    },
+    "adjacencyIds": [
+      "EG0402",
+      "EG1608"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2601",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Suhag",
+    "nameAr": "قسم اول سوهاج",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.69339527,
+        26.54652854
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2603",
+      "EG2602"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2603",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Suhag",
+    "nameAr": "مركز سوهاج",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.65484961,
+        26.54703415
+      ]
+    },
+    "adjacencyIds": [
+      "EG2606",
+      "EG2607",
+      "EG1608",
+      "EG2601",
+      "EG2602",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2602",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Suhag-2",
+    "nameAr": "قسم ثان سوهاج",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.70270266,
+        26.54325012
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2601",
+      "EG2603"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2619",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Suhag City",
+    "nameAr": "مدينة سوهاج الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.64907251,
+        26.48498272
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2208",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Sumusta",
+    "nameAr": "مركز سمسطا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.86581529,
+        28.95052071
+      ]
+    },
+    "adjacencyIds": [
+      "EG2206",
+      "EG2204",
+      "EG1608",
+      "EG2207",
+      "EG2200"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG3508",
+    "parentId": "EG35",
+    "level": 2,
+    "nameEn": "Taba",
+    "nameAr": "قسم طابا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        34.84014165,
+        29.5007464
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG3407",
+      "EG3507"
+    ],
+    "region": "SOUTH_SINAI"
+  },
+  {
+    "_id": "EG2614",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Tahta",
+    "nameAr": "مركز طهطا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.42007428,
+        26.7853952
+      ]
+    },
+    "adjacencyIds": [
+      "EG2606",
+      "EG1608",
+      "EG2611",
+      "EG2615",
+      "EG2613",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1905",
+    "parentId": "EG19",
+    "level": 2,
+    "nameEn": "Tal al-Kabir, al-",
+    "nameAr": "مركز التل الكبير",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.93259278,
+        30.41816391
+      ]
+    },
+    "adjacencyIds": [
+      "EG1304",
+      "EG1307",
+      "EG1608",
+      "EG0404",
+      "EG1904",
+      "EG1300"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1707",
+    "parentId": "EG17",
+    "level": 2,
+    "nameEn": "Tala",
+    "nameAr": "مركز تلا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.94572975,
+        30.66992925
+      ]
+    },
+    "adjacencyIds": [
+      "EG1705",
+      "EG1608",
+      "EG1706",
+      "EG1612",
+      "EG1702",
+      "EG1603"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1211",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Talkha",
+    "nameAr": "مركز طلخا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.38263025,
+        31.10922123
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1208",
+      "EG1221",
+      "EG1610",
+      "EG1210"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2613",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Tama",
+    "nameAr": "مركز طما",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.42171759,
+        26.87352625
+      ]
+    },
+    "adjacencyIds": [
+      "EG2508",
+      "EG1608",
+      "EG2511",
+      "EG2614",
+      "EG2500",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1216",
+    "parentId": "EG12",
+    "level": 2,
+    "nameEn": "Tamy Al-Amdid",
+    "nameAr": "مركز تمى الأمديد",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.59386347,
+        30.94747203
+      ]
+    },
+    "adjacencyIds": [
+      "EG1319",
+      "EG1218",
+      "EG1608",
+      "EG1203",
+      "EG1313",
+      "EG1205"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2306",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Tamya",
+    "nameAr": "مركز طامية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.98155921,
+        29.46747524
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2302",
+      "EG2305",
+      "EG2300"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1603",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Tanta",
+    "nameAr": "مركز طنطا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.93199476,
+        30.80933518
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1706",
+      "EG1607",
+      "EG1612",
+      "EG1611",
+      "EG1604",
+      "EG1707",
+      "EG1601",
+      "EG1602"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1601",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Tanta 1",
+    "nameAr": "قسم أول طنطا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.01426405,
+        30.79538924
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1603",
+      "EG1602"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1602",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Tanta 2",
+    "nameAr": "قسم ثان طنطا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.98924046,
+        30.78591773
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1603",
+      "EG1601"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2903",
+    "parentId": "EG29",
+    "level": 2,
+    "nameEn": "Tiba police station",
+    "nameAr": "مركز شرطة طيبة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.70311162,
+        25.73796448
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2901",
+      "EG2707",
+      "EG2900",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1408",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Tukh",
+    "nameAr": "مركز طوخ",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.19026312,
+        30.34420517
+      ]
+    },
+    "adjacencyIds": [
+      "EG1402",
+      "EG1608",
+      "EG1414",
+      "EG1410",
+      "EG1404",
+      "EG1405"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0105",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Tura",
+    "nameAr": "قسم طره",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.38029291,
+        29.93903558
+      ]
+    },
+    "adjacencyIds": [
+      "EG0103",
+      "EG1608",
+      "EG0102",
+      "EG0104",
+      "EG0139",
+      "EG0100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2809",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Tushaka",
+    "nameAr": "مدينة توشكى الجديدة",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.66090448,
+        22.85642634
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2800"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG2118",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Umraniyya",
+    "nameAr": "قسم العمرانية",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.17743212,
+        29.99289058
+      ]
+    },
+    "adjacencyIds": [
+      "EG2106",
+      "EG1608",
+      "EG2105",
+      "EG2104",
+      "EG2109"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG1814",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Wadi Al-NatrUn",
+    "nameAr": "مركز وادى النطرون",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.31256635,
+        30.42960153
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1800"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2117",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Waraq",
+    "nameAr": "قسم الوراق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.18925128,
+        30.09681417
+      ]
+    },
+    "adjacencyIds": [
+      "EG2102",
+      "EG2116",
+      "EG1608",
+      "EG2101",
+      "EG2120"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2307",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Yousef El sadeq",
+    "nameAr": "مركز يوسف الصديق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.58640872,
+        29.35330534
+      ]
+    },
+    "adjacencyIds": [
+      "EG2303",
+      "EG2304",
+      "EG1608",
+      "EG2300"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG0133",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Zamalik",
+    "nameAr": "قسم الزمالك",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.22319433,
+        30.05629301
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1303",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Zaqaziq",
+    "nameAr": "مركز الزقازيق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.58133673,
+        30.58709729
+      ]
+    },
+    "adjacencyIds": [
+      "EG1304",
+      "EG1318",
+      "EG1608",
+      "EG1308",
+      "EG1310",
+      "EG1315",
+      "EG1411",
+      "EG1314",
+      "EG1213",
+      "EG1301",
+      "EG1302"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1301",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Zaqaziq 1",
+    "nameAr": "قسم اول الزقازيق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.51332071,
+        30.58474231
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1303",
+      "EG1302"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1302",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Zaqaziq 2",
+    "nameAr": "قسم ثان الزقازيق",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.51900829,
+        30.60082188
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1303",
+      "EG1301"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1107",
+    "parentId": "EG11",
+    "level": 2,
+    "nameEn": "Zarqa",
+    "nameAr": "مركز الزرقا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.64870902,
+        31.20883107
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1209",
+      "EG1103",
+      "EG1214",
+      "EG1217",
+      "EG1210"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0131",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Zawiyya Al-Hamra",
+    "nameAr": "قسم الزاويةالحمراء",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.26971678,
+        30.09765937
+      ]
+    },
+    "adjacencyIds": [
+      "EG0121",
+      "EG0118",
+      "EG0124",
+      "EG1608",
+      "EG0123",
+      "EG1406",
+      "EG1407"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0100",
+    "parentId": "EG01",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.79941657,
+        29.97150791
+      ]
+    },
+    "adjacencyIds": [
+      "EG0103",
+      "EG1413",
+      "EG0132",
+      "EG0101",
+      "EG0403",
+      "EG0141",
+      "EG1608",
+      "EG0404",
+      "EG0137",
+      "EG0138",
+      "EG0139",
+      "EG2111",
+      "EG0140",
+      "EG0105",
+      "EG1300",
+      "EG1400",
+      "EG2100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG0200",
+    "parentId": "EG02",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.72093732,
+        30.53723806
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG3302",
+      "EG0213",
+      "EG1608",
+      "EG0214",
+      "EG1817"
+    ],
+    "region": "NORTH_WEST"
+  },
+  {
+    "_id": "EG1300",
+    "parentId": "EG13",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.71889272,
+        30.32694958
+      ]
+    },
+    "adjacencyIds": [
+      "EG1309",
+      "EG1321",
+      "EG1304",
+      "EG1403",
+      "EG1608",
+      "EG1308",
+      "EG0404",
+      "EG1316",
+      "EG1905",
+      "EG0100",
+      "EG1400"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1400",
+    "parentId": "EG14",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.51442361,
+        30.24010553
+      ]
+    },
+    "adjacencyIds": [
+      "EG1413",
+      "EG1403",
+      "EG0132",
+      "EG1608",
+      "EG0100",
+      "EG1300"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG1800",
+    "parentId": "EG18",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.30641966,
+        30.26004846
+      ]
+    },
+    "adjacencyIds": [
+      "EG1803",
+      "EG3302",
+      "EG1818",
+      "EG1608",
+      "EG1817",
+      "EG1711",
+      "EG1814",
+      "EG2100"
+    ],
+    "region": "DELTA"
+  },
+  {
+    "_id": "EG2100",
+    "parentId": "EG21",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        29.39194571,
+        28.93535524
+      ]
+    },
+    "adjacencyIds": [
+      "EG2107",
+      "EG2121",
+      "EG2106",
+      "EG3302",
+      "EG3203",
+      "EG2205",
+      "EG0403",
+      "EG2115",
+      "EG2112",
+      "EG2110",
+      "EG2114",
+      "EG1608",
+      "EG3304",
+      "EG2109",
+      "EG2113",
+      "EG2120",
+      "EG3301",
+      "EG3105",
+      "EG1711",
+      "EG2111",
+      "EG2119",
+      "EG3306",
+      "EG0100",
+      "EG1800",
+      "EG2200",
+      "EG2300",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2200",
+    "parentId": "EG22",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.34125783,
+        28.72323482
+      ]
+    },
+    "adjacencyIds": [
+      "EG2206",
+      "EG2204",
+      "EG2205",
+      "EG0403",
+      "EG2115",
+      "EG2112",
+      "EG2202",
+      "EG2203",
+      "EG1608",
+      "EG2207",
+      "EG2302",
+      "EG2405",
+      "EG2209",
+      "EG3105",
+      "EG2208",
+      "EG2100",
+      "EG2300",
+      "EG2400"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2300",
+    "parentId": "EG23",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        30.34437421,
+        29.347369
+      ]
+    },
+    "adjacencyIds": [
+      "EG2206",
+      "EG2304",
+      "EG1608",
+      "EG2302",
+      "EG2308",
+      "EG2305",
+      "EG2306",
+      "EG2307",
+      "EG2100",
+      "EG2200"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2400",
+    "parentId": "EG24",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.6233655,
+        28.15970443
+      ]
+    },
+    "adjacencyIds": [
+      "EG3202",
+      "EG3203",
+      "EG2204",
+      "EG1608",
+      "EG2510",
+      "EG2404",
+      "EG2405",
+      "EG2402",
+      "EG2406",
+      "EG2407",
+      "EG2410",
+      "EG2412",
+      "EG2409",
+      "EG2408",
+      "EG2403",
+      "EG3105",
+      "EG2100",
+      "EG2200",
+      "EG2500"
+    ],
+    "region": "MIDDLE_EGYPT"
+  },
+  {
+    "_id": "EG2800",
+    "parentId": "EG28",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.26281236,
+        23.59353401
+      ]
+    },
+    "adjacencyIds": [
+      "EG2807",
+      "EG2803",
+      "EG3201",
+      "EG2801",
+      "EG2802",
+      "EG2808",
+      "EG1608",
+      "EG2806",
+      "EG2705",
+      "EG2804",
+      "EG3104",
+      "EG2805",
+      "EG3204",
+      "EG3102",
+      "EG3106",
+      "EG2809",
+      "EG2700"
+    ],
+    "region": "TOSKA"
+  },
+  {
+    "_id": "EG2900",
+    "parentId": "EG29",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "خارج الزمام",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.71616395,
+        25.63421338
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG2705",
+      "EG2901",
+      "EG2902",
+      "EG2903",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2500",
+    "parentId": "EG25",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "صحراء أسيوط",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.79879702,
+        27.35847794
+      ]
+    },
+    "adjacencyIds": [
+      "EG3202",
+      "EG2504",
+      "EG2505",
+      "EG2506",
+      "EG2508",
+      "EG3201",
+      "EG2509",
+      "EG2513",
+      "EG2503",
+      "EG2514",
+      "EG1608",
+      "EG2510",
+      "EG3101",
+      "EG3108",
+      "EG2501",
+      "EG2512",
+      "EG2407",
+      "EG3105",
+      "EG2507",
+      "EG2613",
+      "EG2400",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2600",
+    "parentId": "EG26",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "صحراء سوهاج",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        32.19319647,
+        26.72703553
+      ]
+    },
+    "adjacencyIds": [
+      "EG2703",
+      "EG2604",
+      "EG2618",
+      "EG2605",
+      "EG2508",
+      "EG3201",
+      "EG2606",
+      "EG2607",
+      "EG2617",
+      "EG1608",
+      "EG2608",
+      "EG2610",
+      "EG2611",
+      "EG3101",
+      "EG2708",
+      "EG2612",
+      "EG2603",
+      "EG2619",
+      "EG2614",
+      "EG2613",
+      "EG2500",
+      "EG2700"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG2700",
+    "parentId": "EG27",
+    "level": 2,
+    "nameEn": "Zemam Out",
+    "nameAr": "صحراء قنا",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        33.19054483,
+        25.96603065
+      ]
+    },
+    "adjacencyIds": [
+      "EG2703",
+      "EG2803",
+      "EG3201",
+      "EG2712",
+      "EG2704",
+      "EG1608",
+      "EG2608",
+      "EG2706",
+      "EG2710",
+      "EG3101",
+      "EG2705",
+      "EG2901",
+      "EG2902",
+      "EG2708",
+      "EG2709",
+      "EG2711",
+      "EG2701",
+      "EG2702",
+      "EG2713",
+      "EG2707",
+      "EG3102",
+      "EG3103",
+      "EG2903",
+      "EG2800",
+      "EG2900",
+      "EG2600"
+    ],
+    "region": "UPPER_EGYPT"
+  },
+  {
+    "_id": "EG1609",
+    "parentId": "EG16",
+    "level": 2,
+    "nameEn": "Zifta",
+    "nameAr": "مركز زفتى",
+    "centroid": {
+      "type": "Point",
+      "coordinates": [
+        31.21530251,
+        30.72821639
+      ]
+    },
+    "adjacencyIds": [
+      "EG1608",
+      "EG1706",
+      "EG1708",
+      "EG1610",
+      "EG1604"
+    ],
+    "region": "DELTA"
+  }
+]

@@ -1,0 +1,2032 @@
+{
+  "info": {
+    "name": "AgroVista API",
+    "description": "All AgroVista backend APIs organized by module. Base URL: {{base_url}}\n\nAuto-saves: access_token, refresh_token, parcel_id, crop_id, alert_id, notification_id, user_id, telemetry_id, moderator_id",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000/api/v1",
+      "type": "string"
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "refresh_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "user_email",
+      "value": "testuser@example.com",
+      "type": "string"
+    },
+    {
+      "key": "user_password",
+      "value": "Password@123",
+      "type": "string"
+    },
+    {
+      "key": "admin_email",
+      "value": "admin@agrovista.com",
+      "type": "string"
+    },
+    {
+      "key": "admin_password",
+      "value": "admin123",
+      "type": "string"
+    },
+    {
+      "key": "verification_code",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "parcel_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "crop_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "alert_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "notification_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "user_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "moderator_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "telemetry_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "gov_id",
+      "value": "EG13",
+      "type": "string"
+    },
+    {
+      "key": "location_id",
+      "value": "EG1309",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Has message\", function () { pm.expect(jsonData).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Test\",\n  \"lastName\": \"User\",\n  \"email\": \"{{user_email}}\",\n  \"phoneNumber\": \"+201234567890\",\n  \"password\": \"{{user_password}}\",\n  \"locationId\": \"{{location_id}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/register",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "register"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login (User)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has accessToken\", function () { pm.expect(jsonData.accessToken).to.be.a('string'); });",
+                  "pm.test(\"Has user\", function () { pm.expect(jsonData.user).to.have.property('id'); });",
+                  "pm.collectionVariables.set('access_token', jsonData.accessToken);",
+                  "pm.collectionVariables.set('user_id', jsonData.user?.id);",
+                  "var cookies = pm.response.headers.filter(h => h.key.toLowerCase() === 'set-cookie');",
+                  "var rc = cookies.find(c => c.value.startsWith('refresh_token='));",
+                  "if (rc) { pm.collectionVariables.set('refresh_token', rc.value.split(';')[0].split('=')[1]); }",
+                  "if (jsonData.refreshToken) { pm.collectionVariables.set('refresh_token', jsonData.refreshToken); }"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{user_email}}\",\n  \"password\": \"{{user_password}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/login",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "login"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has accessToken\", function () { pm.expect(jsonData).to.have.property('accessToken'); });",
+                  "pm.collectionVariables.set('access_token', jsonData.accessToken);",
+                  "var cookies = pm.response.headers.filter(h => h.key.toLowerCase() === 'set-cookie');",
+                  "var rc = cookies.find(c => c.value.startsWith('refresh_token='));",
+                  "if (rc) { pm.collectionVariables.set('refresh_token', rc.value.split(';')[0].split('=')[1]); }"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{admin_email}}\",\n  \"password\": \"{{admin_password}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/admin-login",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "admin-login"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Verify Email",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Has message\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{user_email}}\",\n  \"code\": \"{{verification_code}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/verify-email",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "verify-email"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Resend Verification Code",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Has message\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{user_email}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/resend-code",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "resend-code"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Forgot Password",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Has message\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{user_email}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/forgot-password",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "forgot-password"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reset Password",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Has message\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{user_email}}\",\n  \"newPassword\": \"NewPass@123\",\n  \"verificationCode\": \"{{verification_code}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/reset-password",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "reset-password"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Change Password",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has message\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"currentPassword\": \"{{user_password}}\",\n  \"newPassword\": \"NewPass@123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/change-password",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "change-password"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"New accessToken\", function () { pm.expect(j).to.have.property('accessToken'); });",
+                  "pm.collectionVariables.set('access_token', j.accessToken);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{refresh_token}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/refresh",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "refresh"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Save FCM Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has message\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fcmToken\": \"dummy-fcm-token-for-testing\",\n  \"deviceId\": \"device-001\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/auth/save-fcm-token",
+              "host": ["{{base_url}}"],
+              "path": ["auth", "save-fcm-token"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get My Profile",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"User object\", function () { pm.expect(j).to.have.property('id'); pm.expect(j).to.have.property('email'); pm.expect(j).to.have.property('role'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/users/me",
+              "host": ["{{base_url}}"],
+              "path": ["users", "me"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Profile",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Updated\", function () { pm.expect(j).to.have.property('id'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Updated\",\n  \"lastName\": \"Name\",\n  \"phoneNumber\": \"+201111111111\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/users/update-profile",
+              "host": ["{{base_url}}"],
+              "path": ["users", "update-profile"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List All (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Is array\", function () { pm.expect(pm.response.json()).to.be.an('array'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/users",
+              "host": ["{{base_url}}"],
+              "path": ["users"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Status (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has status\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('status'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"ACTIVE\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/users/update-status/{{user_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["users", "update-status", "{{user_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update User State (Admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"status\": \"SUSPENDED\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/users/{{user_id}}/status"
+          },
+          "response": []
+        },
+        {
+          "name": "Discover Moderators (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Is array\", function () { pm.expect(pm.response.json()).to.be.an('array'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/users/moderators/discover?parcelId={{parcel_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["users", "moderators", "discover"],
+              "query": [
+                {
+                  "key": "parcelId",
+                  "value": "{{parcel_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Admin (Super Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Has temporaryPassword\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('temporaryPassword'); pm.expect(j).to.have.property('email'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"New\",\n  \"lastName\": \"Admin\",\n  \"email\": \"newadmin@agrovista.com\",\n  \"phoneNumber\": \"+201234567890\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/users/create-admin",
+              "host": ["{{base_url}}"],
+              "path": ["users", "create-admin"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Toggle Moderator Availability",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has isModerator\", function () { pm.expect(j).to.have.property('isModerator'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/users/me/moderator-availability",
+              "host": ["{{base_url}}"],
+              "path": ["users", "me", "moderator-availability"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Parcels",
+      "item": [
+        {
+          "name": "Create",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Has _id\", function () { pm.expect(j).to.have.property('_id'); pm.expect(j).to.have.property('parcelName'); });",
+                  "pm.test(\"Status is PENDING\", function () { pm.expect(j.status).to.eql('PENDING'); });",
+                  "if (j._id) { pm.collectionVariables.set('parcel_id', j._id); }"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "parcelName",
+                  "value": "Test North Field",
+                  "type": "text"
+                },
+                {
+                  "key": "locationId",
+                  "value": "{{location_id}}",
+                  "type": "text"
+                },
+                {
+                  "key": "size",
+                  "value": "100",
+                  "type": "text"
+                },
+                {
+                  "key": "contract",
+                  "type": "file",
+                  "src": "",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/parcels",
+              "host": ["{{base_url}}"],
+              "path": ["parcels"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List All",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Is array\", function () { pm.expect(pm.response.json()).to.be.an('array'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/parcels",
+              "host": ["{{base_url}}"],
+              "path": ["parcels"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Pending (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Is array\", function () { pm.expect(pm.response.json()).to.be.an('array'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/parcels/pending",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "pending"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get By ID",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Found\", function () { pm.expect(j).to.have.property('_id'); pm.expect(j._id).to.eql(pm.collectionVariables.get('parcel_id')); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/parcels/{{parcel_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "{{parcel_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Invalid ID (404)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Should return error', function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([400, 404]);",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": "{{base_url}}/parcels/invalidid"
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has _id\", function () { pm.expect(pm.response.json()).to.have.property('_id'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "parcelName",
+                  "value": "Updated Field Name",
+                  "type": "text"
+                },
+                {
+                  "key": "size",
+                  "value": "150",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/parcels/{{parcel_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "{{parcel_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Approve (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Status APPROVED\", function () { pm.expect(pm.response.json().status).to.eql('APPROVED'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/parcels/{{parcel_id}}/approve",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "{{parcel_id}}", "approve"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reject (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Status REJECTED\", function () { pm.expect(pm.response.json().status).to.eql('REJECTED'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/parcels/{{parcel_id}}/reject",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "{{parcel_id}}", "reject"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Assign Crop",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has currentCrop\", function () { pm.expect(pm.response.json()).to.have.property('currentCrop'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cropId\": \"{{crop_id}}\",\n  \"plantedOn\": \"2026-04-01T00:00:00Z\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/parcels/{{parcel_id}}/crop",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "{{parcel_id}}", "crop"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Request Moderator",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has message\", function () { pm.expect(pm.response.json()).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/parcels/{{parcel_id}}/request-moderator",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "{{parcel_id}}", "request-moderator"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Assign Moderator (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has moderatorId\", function () { pm.expect(pm.response.json()).to.have.property('moderatorId'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"moderatorId\": \"{{moderator_id}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/parcels/{{parcel_id}}/assign-moderator",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "{{parcel_id}}", "assign-moderator"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Deleted message\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('message'); pm.expect(j.message).to.eql('Parcel deleted successfully'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/parcels/{{parcel_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["parcels", "{{parcel_id}}"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Crops",
+      "item": [
+        {
+          "name": "List All",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Is array\", function () { pm.expect(pm.response.json()).to.be.an('array'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/crops",
+              "host": ["{{base_url}}"],
+              "path": ["crops"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get By ID",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has _id and name\", function () { pm.expect(j).to.have.property('_id'); pm.expect(j).to.have.property('name'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/crops/{{crop_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["crops", "{{crop_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Created\", function () { pm.expect(j).to.have.property('_id'); pm.expect(j).to.have.property('name'); });",
+                  "if (j._id) { pm.collectionVariables.set('crop_id', j._id); }"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Wheat",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Common grain crop",
+                  "type": "text"
+                },
+                {
+                  "key": "acreProfit",
+                  "value": "500",
+                  "type": "text"
+                },
+                {
+                  "key": "thresholds",
+                  "value": "[{\"name\":\"Germination\",\"stage\":1,\"validFrom\":1,\"validTo\":30,\"soilElements\":{\"N\":{\"min\":10,\"max\":80,\"optimalMin\":20,\"optimalMax\":60},\"P\":{\"min\":5,\"max\":50,\"optimalMin\":10,\"optimalMax\":40},\"K\":{\"min\":50,\"max\":300,\"optimalMin\":100,\"optimalMax\":250},\"ph\":{\"min\":5.5,\"max\":8.5,\"optimalMin\":6,\"optimalMax\":7.5},\"temperature\":{\"min\":5,\"max\":40,\"optimalMin\":15,\"optimalMax\":30},\"humidity\":{\"min\":20,\"max\":90,\"optimalMin\":40,\"optimalMax\":70},\"soilMoisture\":{\"min\":10,\"max\":80,\"optimalMin\":30,\"optimalMax\":60}}}]",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/crops/create-crop",
+              "host": ["{{base_url}}"],
+              "path": ["crops", "create-crop"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Updated\", function () { pm.expect(pm.response.json()).to.have.property('_id'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Updated Wheat",
+                  "type": "text"
+                },
+                {
+                  "key": "acreProfit",
+                  "value": "600",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/crops/update-crop/{{crop_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["crops", "update-crop", "{{crop_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Image (Admin)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/path/to/updated-crop-image.jpg"
+                }
+              ]
+            },
+            "url": "{{base_url}}/crops/update-crop/{{crop_id}}"
+          },
+          "response": []
+        },
+        {
+          "name": "Add Schedule (Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Has schedules\", function () { pm.expect(pm.response.json()).to.have.property('schedules'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"regions\": [\"North\", \"South\"],\n  \"sowing\": {\n    \"early\": { \"day\": 1, \"month\": 11 },\n    \"late\": { \"day\": 15, \"month\": 12 }\n  },\n  \"harvest\": {\n    \"early\": { \"day\": 1, \"month\": 4 },\n    \"late\": { \"day\": 15, \"month\": 5 }\n  },\n  \"growingPeriodMin\": 120,\n  \"growingPeriodMax\": 180\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/crops/{{crop_id}}/add-schedule",
+              "host": ["{{base_url}}"],
+              "path": ["crops", "{{crop_id}}", "add-schedule"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Telemetry",
+      "item": [
+        {
+          "name": "Insert Reading",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 201\", function () { pm.response.to.have.status(201); });",
+                  "pm.test(\"Created\", function () { pm.expect(j).to.have.property('_id'); });",
+                  "if (j._id) { pm.collectionVariables.set('telemetry_id', j._id); }"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"parcelId\": \"{{parcel_id}}\",\n  \"timestamp\": \"2026-04-26T10:00:00Z\",\n  \"soilNitrogen\": 45,\n  \"soilPhosphorus\": 25,\n  \"soilPotassium\": 180,\n  \"soilPh\": 6.5,\n  \"temperature\": 22,\n  \"humidity\": 65,\n  \"soilMoisture\": 5,\n  \"source\": \"simulated-sensor-001\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/telemetry/insert-parcel-telemetry",
+              "host": ["{{base_url}}"],
+              "path": ["telemetry", "insert-parcel-telemetry"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Query",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has data and total\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('data'); pm.expect(j).to.have.property('total'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/telemetry?parcelId={{parcel_id}}&limit=10&offset=0",
+              "host": ["{{base_url}}"],
+              "path": ["telemetry"],
+              "query": [
+                {
+                  "key": "parcelId",
+                  "value": "{{parcel_id}}"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                },
+                {
+                  "key": "offset",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Latest",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has parcelId\", function () { pm.expect(pm.response.json()).to.have.property('parcelId'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/telemetry/latest?parcelId={{parcel_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["telemetry", "latest"],
+              "query": [
+                {
+                  "key": "parcelId",
+                  "value": "{{parcel_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get By ID",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Found\", function () { pm.expect(pm.response.json()).to.have.property('_id'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/telemetry/{{telemetry_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["telemetry", "{{telemetry_id}}"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Alerts",
+      "item": [
+        {
+          "name": "Get My Alerts",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Paginated\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('alerts'); pm.expect(j).to.have.property('total'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/alerts/my-alerts?page=1&limit=20",
+              "host": ["{{base_url}}"],
+              "path": ["alerts", "my-alerts"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get By Parcel",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Paginated\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('alerts'); pm.expect(j).to.have.property('total'); pm.expect(j).to.have.property('page'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/alerts/get-parcel-alerts/{{parcel_id}}?page=1&limit=20",
+              "host": ["{{base_url}}"],
+              "path": ["alerts", "get-parcel-alerts", "{{parcel_id}}"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Details",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has _id and severity\", function () { pm.expect(j).to.have.property('_id'); pm.expect(j).to.have.property('severity'); });",
+                  "if (j._id) { pm.collectionVariables.set('alert_id', j._id); }"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/alerts/get-alert-details/{{alert_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["alerts", "get-alert-details", "{{alert_id}}"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Acknowledge",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has message\", function () { pm.expect(pm.response.json()).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/alerts/{{alert_id}}/acknowledge",
+              "host": ["{{base_url}}"],
+              "path": ["alerts", "{{alert_id}}", "acknowledge"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Resolve",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has message\", function () { pm.expect(pm.response.json()).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/alerts/{{alert_id}}/resolve",
+              "host": ["{{base_url}}"],
+              "path": ["alerts", "{{alert_id}}", "resolve"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "item": [
+        {
+          "name": "Get All",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Paginated\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('notifications'); pm.expect(j).to.have.property('total'); pm.expect(j).to.have.property('page'); pm.expect(j).to.have.property('totalPages'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/notifications?page=1&limit=20",
+              "host": ["{{base_url}}"],
+              "path": ["notifications"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Unread Count",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has count\", function () { var j = pm.response.json(); pm.expect(j).to.have.property('count'); pm.expect(j.count).to.be.a('number'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/notifications/unread-count",
+              "host": ["{{base_url}}"],
+              "path": ["notifications", "unread-count"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mark as Read",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has message\", function () { pm.expect(pm.response.json()).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/notifications/{{notification_id}}/read",
+              "host": ["{{base_url}}"],
+              "path": ["notifications", "{{notification_id}}", "read"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mark All Read",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has message\", function () { pm.expect(pm.response.json()).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/notifications/mark-all-read",
+              "host": ["{{base_url}}"],
+              "path": ["notifications", "mark-all-read"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Locations",
+      "item": [
+        {
+          "name": "Get Governorates",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Is array of govs\", function () { pm.expect(j).to.be.an('array'); if (j.length > 0) { pm.expect(j[0]).to.have.all.keys('_id', 'nameEn', 'nameAr'); } });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/locations/gov",
+              "host": ["{{base_url}}"],
+              "path": ["locations", "gov"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cities",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Is array of cities\", function () { pm.expect(j).to.be.an('array'); if (j.length > 0) { pm.expect(j[0]).to.have.all.keys('_id', 'parentId', 'nameEn', 'nameAr', 'lat', 'lon'); } });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/locations/cities?gov-id={{gov_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["locations", "cities"],
+              "query": [
+                {
+                  "key": "gov-id",
+                  "value": "{{gov_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Evaluation",
+      "item": [
+        {
+          "name": "Run All",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has message\", function () { pm.expect(pm.response.json()).to.have.property('message'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/evaluation/run",
+              "host": ["{{base_url}}"],
+              "path": ["evaluation", "run"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Evaluate Single Parcel",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has violations\", function () { pm.expect(pm.response.json()).to.have.property('violations'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/evaluation/parcel/{{parcel_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["evaluation", "parcel", "{{parcel_id}}"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Recommendations",
+      "item": [
+        {
+          "name": "Get Parcel Recommendations",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var j = pm.response.json();",
+                  "pm.test(\"Status 200\", function () { pm.response.to.have.status(200); });",
+                  "pm.test(\"Has recommendations array\", function () { pm.expect(j).to.have.property('recommendations'); pm.expect(j.recommendations).to.be.an('array'); });"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/recommendations/parcel/{{parcel_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["recommendations", "parcel", "{{parcel_id}}"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

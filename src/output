@@ -1,0 +1,158 @@
+like this : 
+"import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
+import { Document, Types } from "mongoose";
+import { CropSchedule } from "./crop.schedules.schema";
+
+export type CropDocument = Crop & Document;
+
+@Schema({ timestamps: true })
+export class Crop {
+        @Prop({ required: true, unique: true })
+        name: string;
+
+        @Prop()
+        description: string;
+
+        @Prop({ required: true })
+        acreProfit: number;
+
+        @Prop({ type: Object, default: [], required: false })
+        schedules: CropSchedule;
+
+        @Prop({ type: { id: Types.ObjectId, url: String }, ref: 'DocumentEntity', required: true })
+        image: {
+                id: Types.ObjectId,
+                url: String
+        };
+
+        @Prop({
+                type: [
+                        {
+                                name: { type: String, required: true },
+                                stage: { type: Number, required: true },
+                                validFrom: Date,
+                                validTo: Date,
+                                soilElements: {
+                                        N: Object,
+                                        P: Object,
+                                        K: Object,
+                                        ph: Object,
+                                        temperature: Object,
+                                        humidity: Object,
+                                        soilMoisture: Object,
+                                },
+                        },
+                ],
+                default: [],
+        })
+        thresholds: any[];
+}
+
+export const CropSchema = SchemaFactory.createForClass(Crop);
+"
+service :
+"import {
+        ConflictException,
+        Injectable,
+        NotFoundException,
+} from "@nestjs/common";
+import { InjectModel } from "@nestjs/mongoose";
+import { Model } from "mongoose";
+import { Crop, CropDocument } from "../schemas/crop.schema";
+import { CreateCropDto } from "./dto/create-crop.dto";
+import { UpdateCropDto } from "./dto/update-crop.dto";
+import { CreateScheduleDto } from "./dto/create-schedule.dto";
+import { MediaService } from "../media/media.service";
+
+@Injectable()
+export class CropsService {
+        constructor(
+                @InjectModel(Crop.name) private cropModel: Model<CropDocument>,
+                private readonly mediaService: MediaService
+        ) {
+                this.cropModel.syncIndexes();
+        }
+
+
+        async createCrop(createCropDto: CreateCropDto, file: Express.Multer.File): Promise<Crop> {
+                const imageDoc = await this.mediaService.validateAndUploadImage(file, true);
+
+                if (!imageDoc) {
+                        throw new ConflictException('Failed to upload crop image');
+                }
+
+                try {
+                        const crop = new this.cropModel({
+                                ...createCropDto,
+                                image: imageDoc._id,
+                        });
+                        return await crop.save();
+                } catch (error: any) {
+                        // Cleanup uploaded image if crop creation fails
+                        if (imageDoc._id) {
+                                await this.mediaService.deleteDocument(imageDoc._id.toString());
+                        }
+
+                        if (error.code === 11000) {
+                                const field = Object.keys(error.keyPattern)[0];
+                                throw new ConflictException(`A crop with this ${field} already exists`);
+                        }
+                        throw error;
+                }
+        }
+
+        async updateCrop(id: string, updateCropDto: UpdateCropDto): Promise<Crop> {
+                try {
+                        const updatedCrop = await this.cropModel
+                                .findByIdAndUpdate(
+                                        id,
+                                        { $set: updateCropDto },
+                                        { new: true, runValidators: true },
+                                )
+                                .exec();
+
+                        if (!updatedCrop) {
+                                throw new NotFoundException(`Crop with ID ${id} not found`);
+                        }
+
+                        return updatedCrop;
+                } catch (error: any) {
+                        if (error.code === 11000) {
+                                const field = Object.keys(error.keyPattern)[0];
+                                throw new ConflictException(`A crop with this ${field} already exists`);
+                        }
+                        throw error;
+                }
+        }
+
+        async findAll(): Promise<Crop[]> {
+                return this.cropModel.find().exec();
+        }
+
+        async findById(id: string): Promise<Crop | null> {
+                return this.cropModel.findById(id).exec();
+        }
+
+        async findByIds(ids: string[]): Promise<Crop[]> {
+                return this.cropModel.find({ _id: { $in: ids } }).exec();
+        }
+
+        async addSchedule(cropId: string, createScheduleDto: CreateScheduleDto): Promise<Crop> {
+                const crop = await this.cropModel.findById(cropId);
+                if (!crop) {
+                        throw new NotFoundException(`Crop with ID ${cropId} not found`);
+                }
+
+                const schedule = {
+                        regions: createScheduleDto.regions,
+                        sowing: createScheduleDto.sowing,
+                        harvest: createScheduleDto.harvest,
+                        growingPeriodMin: createScheduleDto.growingPeriodMin,
+                        growingPeriodMax: createScheduleDto.growingPeriodMax,
+                };
+
+                crop.schedules = schedule as any;
+                return await crop.save();
+        }
+}
+"
