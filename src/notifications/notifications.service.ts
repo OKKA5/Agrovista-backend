@@ -11,6 +11,11 @@ import { User, UserDocument } from "../schemas/user.schema";
 import { Admin, AdminDocument } from "../schemas/admin.schema";
 import { Parcel, ParcelDocument } from "../schemas/parcel.schema";
 
+interface FcmDevice {
+  deviceId: string;
+  fcmToken: string;
+}
+
 @Injectable()
 export class NotificationsService {
   constructor(
@@ -40,6 +45,48 @@ export class NotificationsService {
     return null;
   }
   
+  private async sendToTokens(
+    userId: string,
+    fcms: FcmDevice[],
+    title: string,
+    body: string,
+  ) {
+    const results = await Promise.allSettled(
+      fcms.map((d) =>
+        this.firebaseService.sendPushNotification(d.fcmToken, title, body),
+      ),
+    );
+
+    const invalidTokens: string[] = [];
+    results.forEach((r, i) => {
+      if (r.status === "rejected") {
+        const err: any = r.reason;
+        if (
+          err?.code === "messaging/registration-token-not-registered" ||
+          err?.errorInfo?.code ===
+            "messaging/registration-token-not-registered"
+        ) {
+          invalidTokens.push(fcms[i].fcmToken);
+        }
+      }
+    });
+
+    if (invalidTokens.length > 0) {
+      await this.userModel
+        .updateOne(
+          { _id: userId },
+          { $pull: { fcms: { fcmToken: { $in: invalidTokens } } } },
+        )
+        .exec();
+      await this.adminModel
+        .updateOne(
+          { _id: userId },
+          { $pull: { fcms: { fcmToken: { $in: invalidTokens } } } },
+        )
+        .exec();
+    }
+  }
+
   async sendNotification(
     userId: string,
     message: string,
@@ -55,14 +102,10 @@ export class NotificationsService {
 
     const user = await this.findUserForFcm(userId);
 
-    const tokens = user?.fcms?.map((d) => d.fcmToken) || [];
+    const fcms = user?.fcms || [];
 
-    if (tokens.length) {
-      await Promise.all(
-        tokens.map((token) =>
-          this.firebaseService.sendPushNotification(token, title, message),
-        ),
-      );
+    if (fcms.length) {
+      await this.sendToTokens(userId, fcms, title, message);
     }
 
     return notification;
@@ -98,14 +141,10 @@ export class NotificationsService {
 
     const user = await this.findUserForFcm(userId);
 
-    const tokens = user?.fcms?.map((d) => d.fcmToken) || [];
+    const fcms = user?.fcms || [];
 
-    if (tokens.length) {
-      await Promise.all(
-        tokens.map((token) =>
-          this.firebaseService.sendPushNotification(token, "Alert", message),
-        ),
-      );
+    if (fcms.length) {
+      await this.sendToTokens(userId.toString(), fcms, "Alert", message);
     }
   }
 }
