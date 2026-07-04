@@ -24,7 +24,7 @@ export class MailService {
         text: `Your verification code is: ${code}`,
       });
     } catch (error) {
-      this.logger.error("Mailgun error:", error?.response?.body || error);
+      this.logger.error("Mailgun error:", (error as any)?.response?.data || (error as Error)?.message || error);
       throw new Error("Could not send verification email.");
     }
   }
