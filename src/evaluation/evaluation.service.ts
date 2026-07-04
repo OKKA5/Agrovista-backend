@@ -70,7 +70,7 @@ export class EvaluationService {
     private readonly notificationsService: NotificationsService,
   ) {}
 
-  @Cron("34 2 * * *")
+  @Cron('0 51 13 * * *')
   async evaluateAllParcels(): Promise<{
     evaluated: number;
     violations: number;
