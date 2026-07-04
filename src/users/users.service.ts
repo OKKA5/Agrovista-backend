@@ -163,19 +163,50 @@ export class UsersService {
       throw new NotFoundException(`Parcel ${parcelId} not found`);
     }
 
-    const ownerId =
-      typeof parcel.ownerId === "object" && parcel.ownerId !== null
-        ? parcel.ownerId._id
-        : parcel.ownerId;
+    const parcelLoc = await this.locationsService.findById(parcel.locationId);
+    if (!parcelLoc) {
+      throw new NotFoundException(
+        `Parcel location ${parcel.locationId} not found`,
+      );
+    }
 
-    return this.userModel
+    const baseQuery = {
+      isModerator: true,
+      status: UserStatus.ACTIVE,
+    };
+
+    console.log("parcelid: ", parcel.locationId);
+
+    const exact = await this.userModel
+      .find({ ...baseQuery, locationId: parcel.locationId })
+      .select("-passwordHash")
+      .lean();
+
+    console.log("exact: \n", exact);
+
+    const adjacentIds = parcelLoc.adjacencyIds || [];
+    const adjacent =
+      adjacentIds.length > 0
+        ? await this.userModel
+            .find({ ...baseQuery, locationId: { $in: adjacentIds } })
+            .select("-passwordHash")
+            .lean()
+        : [];
+
+    const excludeIds = [parcel.locationId, ...adjacentIds];
+    const governorateCities =
+      await this.locationsService.getCitiesByGovernorate(parcelLoc.parentId);
+    const govCityIds = governorateCities.map((c) => c._id);
+
+    const governorate = await this.userModel
       .find({
-        isModerator: true,
-        status: UserStatus.ACTIVE,
-        _id: { $ne: ownerId },
+        ...baseQuery,
+        locationId: { $in: govCityIds, $nin: excludeIds },
       })
       .select("-passwordHash")
       .lean();
+
+    return [...exact, ...adjacent, ...governorate];
   }
 
   async findAllAdmins(): Promise<Admin[]> {
