@@ -1,9 +1,14 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable, Logger } from "@nestjs/common";
 import sgMail from "@sendgrid/mail";
 
 @Injectable()
 export class MailService {
+  private readonly logger = new Logger(MailService.name);
+
   constructor() {
+    if (!process.env.SENDGRID_API_KEY) {
+      this.logger.error("SENDGRID_API_KEY is not set");
+    }
     sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
   }
 
@@ -15,8 +20,8 @@ export class MailService {
         subject: `Verification Code ${message}`,
         text: `Your verification code is: ${code}`,
       });
-    } catch (error) {
-      console.error("Error sending email:", error);
+    } catch (error: any) {
+      this.logger.error("SendGrid error:", error?.response?.body || error);
       throw new Error("Could not send verification email.");
     }
   }
