@@ -117,34 +117,35 @@ export class NotificationsService {
       .sort({ createdAt: -1 });
   }
 
-  async sendAlertNotification(alertId: string): Promise<void> {
-    const alert = await this.alertsService.findById(alertId);
-    if (!alert) return;
+  async sendAlertNotificationForParcel(parcelId: string, alerts: any[]): Promise<void> {
+    if (!alerts.length) return;
 
-    const message = alert.message;
-
-    const parcel = await this.parcelModel.findById(alert.parcelId);
+    const parcel = await this.parcelModel.findById(parcelId);
     const userId = parcel?.ownerId;
 
     if (!userId) {
-      console.error(`Cannot find userId for parcel ${alert.parcelId}`);
+      console.error(`Cannot find userId for parcel ${parcelId}`);
       return;
     }
 
+    const messages = alerts.map((a) => a.message).join("\n");
+
+    const title = `Alert: ${alerts.length} issue${alerts.length > 1 ? "s" : ""} detected`;
+    const message = `${alerts.length} alert${alerts.length > 1 ? "s" : ""} on your parcel:\n${messages}`;
+
     await this.notificationModel.create({
       userId: new Types.ObjectId(userId),
-      title: `Alert: ${alert.severity.toString()}`,
+      title,
       message,
-      type: "alert", // <-- ADD THIS
+      type: "alert",
       read: false,
     });
 
     const user = await this.findUserForFcm(userId);
-
     const fcms = user?.fcms || [];
 
     if (fcms.length) {
-      await this.sendToTokens(userId.toString(), fcms, "Alert", message);
+      await this.sendToTokens(userId.toString(), fcms, title, message);
     }
   }
 }

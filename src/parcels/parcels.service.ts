@@ -39,7 +39,7 @@ export class ParcelsService {
     contractFile: Express.Multer.File,
     userId: string,
   ): Promise<ParcelDocument> {
-    //validate location id
+
     await this.locationsService.validateId(createParcelDto.locationId, [2]);
 
     const mediaDocument = await this.mediaService.validateAndUpload(

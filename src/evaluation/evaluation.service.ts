@@ -175,9 +175,18 @@ export class EvaluationService {
       alerts = await this.alertsService.createMany(alertPayloads, true);
     }
 
+    const alertsByParcel = new Map<string, any[]>();
+    for (const alert of alerts) {
+      const a = alert as any;
+      const pid = a.parcelId?.toString();
+      if (!pid) continue;
+      if (!alertsByParcel.has(pid)) alertsByParcel.set(pid, []);
+      alertsByParcel.get(pid)!.push(a);
+    }
+
     Promise.all(
-      alerts.map((a) =>
-        this.notificationsService.sendAlertNotification((a as any)._id),
+      Array.from(alertsByParcel.entries()).map(([parcelId, parcelAlerts]) =>
+        this.notificationsService.sendAlertNotificationForParcel(parcelId, parcelAlerts),
       ),
     );
 
@@ -243,10 +252,8 @@ export class EvaluationService {
 
       const alerts = await this.alertsService.createMany(alertPayloads, true);
 
-      for (const alert of alerts) {
-        await this.notificationsService.sendAlertNotification(
-          (alert as any)._id.toString(),
-        );
+      if (alerts.length > 0) {
+        await this.notificationsService.sendAlertNotificationForParcel(parcelId, alerts);
       }
     }
 
